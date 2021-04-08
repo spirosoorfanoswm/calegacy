@@ -1,0 +1,20 @@
+export const environment = {
+    production: false,
+    clienteleLengthLoad: 100,
+    vatLabel:'VAT number',
+    url: '',
+    configinfo: '/repository/configinfo',
+    contextinfo: '/repository/contextinfo',
+    clientdistribution: '/repository/clienteledistribution',
+    clientelestatistics: '/repository/clientelestatistics',
+    clientelestatisticsgraph: '/repository/clientelestatisticsgraph',
+    customers: '/repository/customers',
+    customersDev: '/customerDev',
+    searchcustomers: '/repository/customers/search',
+    scenarios: '/scenario/fetch',
+    scenarios_put_post_delete: '/scenario',
+    scenario_template: '/scenario/template',
+    customer:'/customer',
+    modelvalidation:'/model',
+    download:'/export/downloadfile'
+};

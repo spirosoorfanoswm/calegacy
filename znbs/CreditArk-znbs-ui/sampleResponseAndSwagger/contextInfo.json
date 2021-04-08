@@ -1,0 +1,384 @@
+{
+    "portfolios": [
+        {
+            "portfolioId": 11,
+            "description": "ΠΕΤΡΕΛΑΙΟΕΙΔΗ - ΙΔΙΩΤΙΚΕΣ ΕΤΑΙΡΕΙΕΣ"
+        },
+        {
+            "portfolioId": 12,
+            "description": "ΠΕΤΡΕΛΑΙΟΕΙΔΗ - ΕΞΑΓΩΓΕΣ"
+        },
+        {
+            "portfolioId": 13,
+            "description": "ΠΕΤΡΕΛΑΙΟΕΙΔΗ - ΔΗΜΟΣΙΟ, ΣΤΡΑΤΟΣ"
+        },
+        {
+            "portfolioId": 14,
+            "description": "ΠΕΤΡΕΛΑΙΟΕΙΔΗ - ΕΝΔΟΕΤΑΙΡΙΚΑ"
+        },
+        {
+            "portfolioId": 21,
+            "description": "ΧΗΜΙΚΑ - ΙΔΙΩΤΙΚΕΣ ΕΤΑΙΡΕΙΕΣ"
+        },
+        {
+            "portfolioId": 22,
+            "description": "ΧΗΜΙΚΑ - ΕΞΑΓΩΓΕΣ"
+        },
+        {
+            "portfolioId": 24,
+            "description": "ΧΗΜΙΚΑ - ΕΝΔΟΕΤΑΙΡΙΚΑ"
+        }
+    ],
+    "qualitativeData": [
+        {
+            "description": "Not defined",
+            "dataType": 9,
+            "discreteValues": null
+        }
+    ],
+    "activityDescriptions": [
+        "Sales",
+        "VAT on sales",
+        "Returned goods",
+        "VAT on returns",
+        "Payments",
+        "Rebates",
+        "Write Offs"
+    ],
+    "exposureDescriptions": [
+        "Balance",
+        "Limit"
+    ],
+    "bucketDescriptions": [
+        "Balance aging",
+        "1-30 days past due",
+        "31-60 days past-due",
+        "61-90 days past-due",
+        "91-120 days past-due",
+        "121 days and over past-due"
+    ],
+    "criteria": [
+        {
+            "description": "Exposure to mean turnover (3 months)",
+            "dataType": 2,
+            "discreteValues": null
+        },
+        {
+            "description": "Exposure to mean turnover (6 months)",
+            "dataType": 2,
+            "discreteValues": null
+        },
+        {
+            "description": "Exposure to mean turnover (12 months)",
+            "dataType": 2,
+            "discreteValues": null
+        },
+        {
+            "description": "Past-due to mean turnover (3 months)",
+            "dataType": 2,
+            "discreteValues": null
+        },
+        {
+            "description": "Past-due to mean turnover (6 months)",
+            "dataType": 2,
+            "discreteValues": null
+        },
+        {
+            "description": "Past-due to mean turnover (12 months)",
+            "dataType": 2,
+            "discreteValues": null
+        },
+        {
+            "description": "Past-due over 30d to mean turnover (3 months)",
+            "dataType": 2,
+            "discreteValues": null
+        },
+        {
+            "description": "Past-due over 30d to mean turnover (6 months)",
+            "dataType": 2,
+            "discreteValues": null
+        },
+        {
+            "description": "Past-due over 30d to mean turnover (12 months)",
+            "dataType": 2,
+            "discreteValues": null
+        },
+        {
+            "description": "Payments to turnover in last 3 months",
+            "dataType": 2,
+            "discreteValues": null
+        },
+        {
+            "description": "Payments to turnover in last 6 months",
+            "dataType": 2,
+            "discreteValues": null
+        },
+        {
+            "description": "Payments to turnover in last 12 months",
+            "dataType": 2,
+            "discreteValues": null
+        },
+        {
+            "description": "Current limit use",
+            "dataType": 2,
+            "discreteValues": null
+        },
+        {
+            "description": "Mean limit use in last 3 months",
+            "dataType": 2,
+            "discreteValues": null
+        },
+        {
+            "description": "Mean limit use in last 6 months",
+            "dataType": 2,
+            "discreteValues": null
+        },
+        {
+            "description": "Mean limit use in last 12 months",
+            "dataType": 2,
+            "discreteValues": null
+        },
+        {
+            "description": "Mean turnover in last 3 months",
+            "dataType": 1,
+            "discreteValues": null
+        },
+        {
+            "description": "Mean turnover in last 6 months",
+            "dataType": 1,
+            "discreteValues": null
+        },
+        {
+            "description": "Mean turnover in last 12 months",
+            "dataType": 1,
+            "discreteValues": null
+        }
+    ],
+    "customerStatuses": [
+        "Άριστος",
+        "Πολύ Καλός / Καλός",
+        "Πολύ Καλός / Καλός",
+        "Πολύ Καλός / Καλός",
+        "Μέτριος",
+        "Μέτριος",
+        "Μέτριος",
+        "Επικίνδυνος",
+        "Επισφαλής",
+        "Επισφαλής",
+        "Επίδικος",
+        "Επίδικος"
+    ],
+    "entityInfoDescriptions": [
+        "No details"
+    ],
+    "entityInfoFormat": [
+        "HLS"
+    ],
+    "mitigantDescriptions": [
+        "ΓΡΑΜΜΑΤΕΙΑ ΕΙΣΠΡΑΚΤΕΑ",
+        "ΑΞΙΑ ΥΠΟΘΗΚΩΝ & ΠΡΟΣΗΜΕΙΩΣΕΩΝ ΠΕΛΑΤΩΝ",
+        "ΕΝΕΓΓΥΕΣ ΠΙΣΤΩΣΕΙΣ LCs/ CAD",
+        "ΕΠΙΤΑΓΕΣ ΕΓΓΥΗΣΕΩΣ ΑΟΡΙΣΤΟΥ ΧΡΟΝΟΥ",
+        "ΕΤΑΙΡΙΚΕΣ ΕΓΓΥΗΤΙΚΕΣ ΕΞΑΣΦΑΛΙΣΗΣ ΑΠΑΙΤΗΣΕΩΝ",
+        "ΜΕΤΑΧΡΟΝΟΛΟΓΗΜΕΝΕΣ ΕΠΙΤΑΓΕΣ ΙΔΙΟΥ",
+        "ΜΕΤΑΧΡΟΝΟΛΟΓΗΜΕΝΕΣ ΕΠΙΤΑΓΕΣ ΤΡΙΤΩΝ",
+        "ΠΡΟΚΑΤΑΒΟΛΗ ΠΕΛΑΤΗ ΜΕΤΡΗΤΑ",
+        "ΤΡΑΠΕΖΙΚΕΣ ΕΓΓΥΗΤΙΚΕΣ ΕΠΙΣΤΟΛΕΣ ΠΕΛΑΤΩΝ",
+        "FACTORING ΠΕΛΑΤΩΝ",
+        "FACTORING ΧΩΡΙΣ ΑΝΑΓΩΓΗ"
+    ],
+    "mitigantRecoveryRates": [
+        0.3,
+        0,
+        0.5,
+        1,
+        0.25,
+        0,
+        0,
+        0.75,
+        1,
+        1,
+        1,
+        1
+    ],
+    "snapshotDates": [
+        1556571600000,
+        1553983200000,
+        1551304800000,
+        1548885600000,
+        1546207200000,
+        1543528800000,
+        1540936800000,
+        1538254800000,
+        1535662800000,
+        1532984400000,
+        1530306000000,
+        1527714000000,
+        1525035600000,
+        1522443600000,
+        1519768800000,
+        1517349600000,
+        1514671200000,
+        1511992800000,
+        1509400800000,
+        1506718800000,
+        1504126800000,
+        1501448400000,
+        1498770000000,
+        1496178000000
+    ],
+    "scores": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "11",
+        "12"
+    ],
+    "grades": [
+        "Low",
+        "Medium",
+        "High"
+    ],
+    "defaultScenarioParams": {
+        "raroc":  { value: '0.13', type: 'percenatge'},
+        "wacc": 0.08,
+        "worstAcceptedScore": "12",
+        "maxDso": 180,
+        "minAcceptedLimitUse": 0.8,
+        "maxLimitGrowth": 0.1,
+        "maxLimitReduction": 0.5,
+        "minLimitGrowth": 0.05,
+        "minLimitReduction": 0.05,
+        "significantDigits": 3,
+        "minLimit": 5000,
+        "minLimitPct": 0.05,
+        "minAcceptedRwm": 0.075
+    },
+    "reportDescriptors": {
+        "41": {
+            "objectTypeIds": [
+                20,
+                21
+            ],
+            "description": "Clientele",
+            "internalParameters": [
+                0,
+                1,
+                2
+            ],
+            "userParameters": [
+                {
+                    "caption": "Report format",
+                    "description": "Select the required type of report",
+                    "fieldType": 19,
+                    "maxLength": -1,
+                    "discreteValues": {
+                        "1": "HTML document",
+                        "3": "Adobe PDF",
+                        "5": "Microsoft Word 2003",
+                        "6": "Microsoft Word",
+                        "7": "Microsoft Excel 2003",
+                        "8": "Microsoft Excel"
+                    },
+                    "validationRule": null,
+                    "validationMessage": null,
+                    "readOnly": false,
+                    "defaultValueFunc": null
+                }
+            ]
+        },
+        "45": {
+            "objectTypeIds": [
+                30,
+                40
+            ],
+            "description": "Scenario clientele",
+            "internalParameters": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "userParameters": [
+                {
+                    "caption": "Report format",
+                    "description": "Select the required type of report",
+                    "fieldType": 19,
+                    "maxLength": -1,
+                    "discreteValues": {
+                        "1": "HTML document",
+                        "3": "Adobe PDF",
+                        "5": "Microsoft Word 2003",
+                        "6": "Microsoft Word",
+                        "7": "Microsoft Excel 2003",
+                        "8": "Microsoft Excel"
+                    },
+                    "validationRule": null,
+                    "validationMessage": null,
+                    "readOnly": false,
+                    "defaultValueFunc": null
+                }
+            ]
+        },
+        "70": {
+            "objectTypeIds": [
+                20,
+                21
+            ],
+            "description": "Customer's history",
+            "internalParameters": [
+                0,
+                1,
+                5
+            ],
+            "userParameters": [
+                {
+                    "caption": "Report format",
+                    "description": "Select the required type of report",
+                    "fieldType": 19,
+                    "maxLength": -1,
+                    "discreteValues": {
+                        "1": "HTML document",
+                        "3": "Adobe PDF",
+                        "5": "Microsoft Word 2003",
+                        "6": "Microsoft Word"
+                    },
+                    "validationRule": null,
+                    "validationMessage": null,
+                    "readOnly": false,
+                    "defaultValueFunc": null
+                }
+            ]
+        }
+    },
+    "comparisonPeriod": 12,
+    "comparisonPeriods": [
+        {
+            "id": 1,
+            "period": 12,
+            "desc": "12 months"
+        },
+        {
+            "id": 2,
+            "period": 6,
+            "desc": "6 months"
+        },
+        {
+            "id": 3,
+            "period": 4,
+            "desc": "4 months"
+        },
+        {
+            "id": 4,
+            "period": 3,
+            "desc": "3 months"
+        }
+    ],
+    "amountDivident": 1000,
+    "entityFormat": [
+        "HLS"
+    ]
+}

@@ -1,0 +1,85 @@
+<div *ngIf="!allow" class="loading">Loading</div>
+<section *ngIf="loadedProspect || createProspect">
+    <button class="btn btn-plain btn-icon-left animate" (click)="homeProspect()"><span class="icon icon-arrow_left"></span> Back</button>
+</section>
+
+<section>
+    <!-- Load Specific Prospect -->
+    <app-specific-prospect *ngIf="loadedProspect"></app-specific-prospect>
+</section>
+
+<section *ngIf="createProspect">
+    <!-- Create New Prospect -->
+    <app-create></app-create>
+</section>
+
+<section class="" *ngIf="!loadedProspect && !createProspect">
+    <!-- Create New -->
+    <button style="float:right" class="btn btn-primary btn-primary-blue animate" (click)="newProspect()"> + Create New</button>
+
+    <div class="table-responsive">
+        <form novalidate #f="ngForm">
+            <table class="table table-striped" cellpadding="0" cellspacing="0">
+                <thead>
+                <tr>
+                    <th>
+                        <div class="form-group">
+                            <label>Prospect ID</label>
+                            <input class="form-control animate" type="text" placeholder="Search..." name="name" placeholder="Search by Prospect ID" ngModel
+                                    (keyup)="filterResults(f, 'prospectId'); "/>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-group">
+                            <label>Prospect Name</label>
+                            <input class="form-control animate" type="text" placeholder="Search..." name="name" placeholder="Search by Prospect Name" ngModel
+                                (keyup)="filterResults(f, 'description'); "/>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-group">
+                            <label>Number of prospective Customers</label>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-group">
+                            <label>Expected annual turnover per customer</label>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-group">
+                            <label>Prospective customers's risk level</label>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-group">
+                            <label>Profit margin</label>
+                        </div>
+                    </th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let prospect of scenarioProspects  | searchText: searchParams; let i =index" style="cursor: pointer;">
+                    <td (click)="showInfo(prospect)">{{prospect.parameters.prospectId}}</td>
+                    <td (click)="showInfo(prospect)">{{prospect.parameters.description}}</td>
+                    <td (click)="showInfo(prospect)">{{prospect.parameters.customersNum}}</td>
+                    <td (click)="showInfo(prospect)">{{prospect.parameters.purchases}}</td>
+                    <td (click)="showInfo(prospect)">{{prospect.parameters.grade}}</td>
+                    <td (click)="showInfo(prospect)">{{prospect.parameters.profitMargin}}</td>
+                    <td (click)="deleteScenario( i, prospect )"><img src="/assets/img/delete.png"></td>
+                    <!--td><button class="btn btn-icon animate"><span class="icon icon-download"></span></button></td>-->
+                </tr>
+
+                <tr class="customersCount">
+                    <td colspan="9" style="text-align: center"><b>Total Prospects: {{ scenarioProspects.length }}</b></td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</section>
+
+    
+    
+    

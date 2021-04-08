@@ -1,0 +1,35 @@
+{
+  "firstLevelMenuItems":[
+    {
+      "name": "Credit Monitor",
+      "link": "credit-monitor",
+      "icon": "icon-manager",
+      "secondLevelMenuItems": [
+        {
+          "name": "Risk Profile",
+          "link": "risk-profile"
+        },
+        {
+          "name": "Statistics",
+          "link": "statistics"
+        },
+        {
+          "name": "Clientele",
+          "link": "clientele"
+        }
+      ]
+    },
+    {
+      "name": "Credit Manager",
+      "link": "scenarios",
+      "icon": "icon-portfolio",
+      "secondLevelMenuItems": []
+    },
+    {
+      "name": "Export",
+      "link": "exporter",
+      "icon": "icon-segmentation",
+      "secondLevelMenuItems": []
+    }
+  ]
+}

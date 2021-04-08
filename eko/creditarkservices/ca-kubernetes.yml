@@ -1,0 +1,67 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ca
+  labels:
+    app: ca
+spec:
+  ports:
+  - name: http
+    port: 8090
+    targetPort: 8090
+  selector:
+    app: ca
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ca
+  namespace: default
+  labels:
+    app: ca
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ca
+  template:
+    metadata:
+      labels:
+        app: ca
+    spec:
+      containers:
+      - name: ca
+        image: isanstrazimiri/ca
+        ports:
+        - name: http
+          containerPort: 8090
+        - name: https
+          containerPort: 8443
+        env:
+          - name: SERVER_PORT
+          - value: 8090
+          - name: SPRING_JPA_DATABASE
+          - value: postgres
+          - name: SPRING_DATASOURCE_PLATFORM
+          - value: postgres
+          - name: SPRING_DATASOURCE_URL
+          - value: jdbc:postgresql://10.0.141.36:5432/postgres
+          - name: SPRING_DATASOURCE_URL
+          - value: jdbc:postgresql://10.0.141.36:5432/postgres
+          - name: SPRING_DATASOURCE_USERNAME
+          - value: postgres
+          - name: SPRING_DATASOURCE_PASSWORD
+          - value: postgres
+          - name: SECURITY_ISSUER_URI
+          - value: http://keycloak:8080/auth/realms/dev
+          - name: OAUTH_CLIENT_ID
+          - value: employee-service
+          - name: OAUTH_CLIENT_SECRET
+          - value: d1f753e8-bba7-46d8-8e47-3d15f39e0edb
+          - name: REPORTS_PATH
+          - value: /mnt/data
+          - name: MONGO_DB
+          - value: WeMetrixKPIS
+          - name: MONGO_DB_URL
+          - value: mongodb://cosmosdb-kube:6obrPa9QRjfiljJMbhj0jqyVvHPcJoDuSJyBzppJR8VXW9FDuouDML2MBqYrBunCkbibwhyAe4PDJyiRG8OI5w==@cosmosdb-kube.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@cosmosdb-kube@

@@ -1,0 +1,37 @@
+version: '3'
+
+services:
+  credit-ark-app:
+    image: ca
+    ports:
+      - 8090:8090
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://192.168.31.111:5432/postgres
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=postgres
+      - SPRING_JPA_DATABASE=postgres
+      - SPRING_DATASOURCE_PLATFORM=postgres
+      - SECURITY_ISSUER_URI=http://192.168.31.110:9080/auth/realms/dev
+      - SECURITY_BASIC_ENABLED=true
+      - RECUR=0 0 22 1/1 * ? *
+      - CA_DEFAULT_USER=ooredoo
+      - MGMT_SECURITY_ENABLED=true
+      - OAUTH_CLIENT_ID=employee-service
+      - OAUTH_CLIENT_SECRET=9b7f413a-466e-482e-b6ee-8446f78bd046
+      - OAUTH_CLIENT_USER_AUTH_URI=http://192.168.31.110:9080/auth/realms/dev/protocol/openid-connect/auth
+      - OAUTH_CLIENT_ACCESS_TOKEN_URI=http://192.168.31.110:9080/auth/realms/dev/protocol/openid-connect/token
+      - OAUTH_CLIENT_SCOPE=openid
+      - OAUTH_RESOURCE_TOKEN=http://192.168.31.110:9080/auth/realms/dev/protocol/openid-connect/token/introspect
+#    logging:
+#      driver: syslog
+#      options:
+#        syslog-address: udp://192.168.65.2:514
+
+
+
+
+#set SPRING_JPA_DATABASE=creditark
+#set SPRING_DATASOURCE_PLATFORM=postgres
+#set SPRING_DATASOURCE_URL=jdbc:postgresql://192.168.31.111:5432/postgres
+#set SPRING_DATASOURCE_USERNAME=postgres
+#set SPRING_DATASOURCE_PASSWORD=postgres

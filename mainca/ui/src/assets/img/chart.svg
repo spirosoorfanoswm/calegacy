@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="21" viewBox="0 0 21 21">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="21" height="21" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2" clip-path="url(#clip-path)">
+    <g id="Layer_2-2" data-name="Layer 2">
+      <g id="icons">
+        <path id="Path_310" data-name="Path 310" d="M20.125.875h-5.25V19.25H14v-7H8.75v7H7.875V7H2.625V19.25H1.75V0H0V21H21V19.25h-.875Zm-3.5,1.75h1.75V19.25h-1.75ZM10.5,14h1.75v5.25H10.5ZM4.375,8.75h1.75v10.5H4.375Z" fill="#757575"/>
+      </g>
+    </g>
+  </g>
+</svg>

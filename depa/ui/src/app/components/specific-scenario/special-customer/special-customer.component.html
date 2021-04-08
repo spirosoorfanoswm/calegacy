@@ -1,0 +1,91 @@
+<div *ngIf="!allow" class="loading">Loading</div>
+<section *ngIf="loadedSpecialCustomer || createCustomer">
+    <button class="btn btn-plain btn-icon-left animate" (click)="homeCustomer()"><span class="icon icon-arrow_left"></span> Back</button>
+</section>
+
+<section *ngIf="createCustomer">
+    <!-- Create New Prospect -->
+    <app-create-customer></app-create-customer>
+</section>
+
+<section class="loaded-special-customer">
+    <!--<app-clientele-search></app-clientele-search>-->
+    <!-- Load Specific Prospect -->
+    <app-specific-customer *ngIf="loadedSpecialCustomer"></app-specific-customer>
+</section>
+
+
+<section class="" *ngIf="!loadedSpecialCustomer && !createCustomer">
+
+    <!-- Create New -->
+    <button style="float:right" class="btn btn-primary btn-primary-blue animate" (click)="newCustomer()"> + Create New</button>
+
+    <div class="table-responsive">
+        <form novalidate #f="ngForm">
+            <table class="table table-striped" cellpadding="0" cellspacing="0">
+                <thead>
+                <tr>
+                    <th>
+                        <div class="form-group">
+                            <label>Customer code</label>
+                            <input class="form-control animate" type="text" placeholder="Search..." name="name" placeholder="Search by Customer code" ngModel
+                                   (keyup)="filterResults(f, 'customerId'); "/>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-group">
+                            <label>Customer Name</label>
+                            <input class="form-control animate" type="text" placeholder="Search..." name="name" placeholder="Search by Customer Name" ngModel
+                                   (keyup)="filterResults(f, 'customerName'); "/>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-group">
+                            <label>Max Limit Growth</label>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-group">
+                            <label>Max Limit Reduction</label>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-group">
+                            <label>Min Limit Growth</label>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-group">
+                            <label>Min Limit Reduction</label>
+                        </div>
+                    </th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let customer of scenarioSpecialCustomers | searchText: searchParams | paginate: { itemsPerPage: itemsPerPageLoad, currentPage: j }; let i =index"
+                     style="cursor: pointer;" >
+                    <td (click)="showInfo(customer)">{{customer.customerId}}</td>
+                    <td (click)="showInfo(customer)">{{customer.customerName}}</td>
+                    <td (click)="showInfo(customer)">{{customer.parameters.maxLimitGrowth}}</td>
+                    <td (click)="showInfo(customer)">{{customer.parameters.maxLimitReduction}}</td>
+                    <td (click)="showInfo(customer)">{{customer.parameters.minLimitGrowth}}</td>
+                    <td (click)="showInfo(customer)">{{customer.parameters.minLimitReduction}}</td>
+                    <td (click)="deleteCustomer( i, customer )"><img src="/assets/img/delete.png"></td>
+                    <!--td><button class="btn btn-icon animate"><span class="icon icon-download"></span></button></td>-->
+                </tr>
+
+                <tr class="customersCount">
+                    <td colspan="9" style="text-align: center"><b>Total Customers: {{ scenarioSpecialCustomers.length }}</b></td>
+                </tr>
+                </tbody>
+            </table>
+            <pagination-controls *ngIf="scenarioSpecialCustomers.length > itemsPerPageLoad" class="pagination justify-content-center align-items-center" previousLabel="<"  nextLabel=">"></pagination-controls>
+
+            
+        </form>
+    </div>
+</section>
+
+
+

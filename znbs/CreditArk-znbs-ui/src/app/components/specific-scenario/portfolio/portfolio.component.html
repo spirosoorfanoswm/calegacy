@@ -1,0 +1,78 @@
+<section *ngIf="loadedPortfolio">
+    <button class="btn btn-plain btn-icon-left animate" (click)="homePortfolio()"><span class="icon icon-arrow_left"></span></button>
+</section>
+
+<section>
+    <app-specific-portfolio *ngIf="loadedPortfolio"></app-specific-portfolio>
+</section>
+
+<div class="table-responsive" *ngIf="!loadedPortfolio">
+    <form novalidate #f="ngForm">
+        <table class="table table-striped" cellpadding="0" cellspacing="0">
+            <thead>
+            <tr>
+                <th>
+                    <div class="form-group">
+                        
+                        <label class="allow-sort" (click)="sortResults(f, 'portfolioId');">Portfolio ID</label >
+                        <input class="form-control animate" type="text" placeholder="Search..." 
+                        name="name" placeholder="Search by Portfolio ID" ngModel
+                               (keyup)="filterResults(f, 'portfolioId'); "/>
+                    </div>
+                </th>
+                <th>
+                    <div class="form-group">
+                        <label>Portfolio Name</label>
+                        <input class="form-control animate" type="text" placeholder="Search..."
+                         name="name" placeholder="Search by Portfolio Name" ngModel
+                               (keyup)="filterResults(f, 'portfolioName'); "/>
+                    </div>
+                </th>
+                <th>
+                    <div class="form-group">
+                        <label>Max Limit Growth</label>
+                        <input class="form-control animate" type="text" placeholder="Search..." disabled>
+                    </div>
+                </th>
+                <th>
+                    <div class="form-group">
+                        <label>Max Limit Reduction</label>
+                        <input class="form-control animate" type="text" placeholder="Search..." disabled>
+                    </div>
+                </th>
+                <th>
+                    <div class="form-group">
+                        <label>Min Limit Growth</label>
+                        <input class="form-control animate" type="text" placeholder="Search..." disabled>
+                    </div>
+                </th>
+                <th>
+                    <div class="form-group">
+                        <label>Min Limit Reduction</label>
+                        <input class="form-control animate" type="text" placeholder="Search..." disabled>
+                    </div>
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let portfolio of scenario.portfolios | searchText: searchParams | sortEngine: sortParams"
+                (click)="showInfo(portfolio)" style="cursor: pointer;">
+                <td>{{portfolio.portfolioId}}</td>
+                <td>{{portfolio.portfolioName}}</td>
+                <td>{{portfolio.parameters.maxLimitGrowth}}</td>
+                <td>{{portfolio.parameters.maxLimitReduction}}</td>
+                <td>{{portfolio.parameters.minLimitGrowth}}</td>
+                <td>{{portfolio.parameters.minLimitReduction}}</td>                
+            </tr>
+
+            <tr class="customersCount">
+                <td colspan="9" style="text-align: center"><b>Total Portfolios: {{ scenario.portfolios.length }}</b></td>
+            </tr>
+
+            </tbody>
+        </table>
+
+    </form>
+</div>
+
+

@@ -1,0 +1,7 @@
+{
+  "timestamp": 1570436294862,
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "Customer:1662. Invalid profit margin.",
+  "path": "/scenarios"
+}

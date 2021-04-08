@@ -1,0 +1,162 @@
+{
+    "lastPeriod":"30-04-2019",
+    "previousPeriod":"30-04-2018",
+    "clientStatisticItemDtos":[
+        {
+            "statistic":"balance",
+            "description":"Total exposure",
+            "last":"87283006.74",
+            "prev":"55722537.54"
+        },
+        {
+            "statistic":"pastDue",
+            "description":"Past-due amount",
+            "last":"493733.5",
+            "prev":"3189650.26"
+        },
+        {
+            "statistic":"limits",
+            "description":"Total limits granted amount",
+            "last":"185191037",
+            "prev":"188086037"
+        },
+        {
+            "statistic":"overrides",
+            "description":"Total limits overridden amount",
+            "last":"291619.71",
+            "prev":"897364.76"
+        },
+        {
+            "statistic":"unusedLimits",
+            "description":"Total unused limits amount",
+            "last":"98199649.97",
+            "prev":"133260864.22"
+        },
+        {
+            "statistic":"unusedPct",
+            "description":"Unused limits percentage",
+            "last":"53.03%",
+            "prev":"70.85%"
+        },
+        {
+            "statistic":"overriddenPct",
+            "description":"Overridden limits percentage",
+            "last":"0.33%",
+            "prev":"1.61%"
+        },
+        {
+            "statistic":"pastDuePct",
+            "description":"Past-due percentage",
+            "last":"0.57%",
+            "prev":"3.65%"
+        },
+        {
+            "statistic":"periodSales",
+            "description":"Sales",
+            "last":"2502439406.05",
+            "prev":"2430037787.06"
+        },
+        {
+            "statistic":"periodVat",
+            "description":"VAT amount",
+            "last":"379.92",
+            "prev":"0"
+        },
+        {
+            "statistic":"periodTurnover",
+            "description":"Turnover",
+            "last":"2502439785.97",
+            "prev":"2430037787.06"
+        },
+        {
+            "statistic":"periodPayments",
+            "description":"Payments amount",
+            "last":"-2746769075.46",
+            "prev":"-2447969423.83"
+        },
+        {
+            "statistic":"meanSales",
+            "description":"Mean sales",
+            "last":"208536617.17",
+            "prev":"202503148.92"
+        },
+        {
+            "statistic":"meanTurnover",
+            "description":"Sales coefficient of variation",
+            "last":"208536648.83",
+            "prev":"202503148.92"
+        },
+        {
+            "statistic":"volSales",
+            "description":"Mean turnover",
+            "last":"36.82%",
+            "prev":"32.99%"
+        },
+        {
+            "statistic":"meanPayments",
+            "description":"Mean payments",
+            "last":"-228897422.96",
+            "prev":"-203997451.99"
+        },
+        {
+            "statistic":"volPayments",
+            "description":"Payments coefficient of variation",
+            "last":"",
+            "prev":""
+        },
+        {
+            "statistic":"meanExposure",
+            "description":"Mean exposure",
+            "last":"46403279.04",
+            "prev":"33401230.52"
+        },
+        {
+            "statistic":"volExposure",
+            "description":"Exposure coefficient of variation",
+            "last":"49.79%",
+            "prev":"62.96%"
+        },
+        {
+            "statistic":"meanPastDue",
+            "description":"Mean past-due amount",
+            "last":"3501003.32",
+            "prev":"2639774.08"
+        },
+        {
+            "statistic":"meanLimits",
+            "description":"Mean limits granted amount",
+            "last":"141702288",
+            "prev":"120608368.33"
+        },
+        {
+            "statistic":"meanOverrides",
+            "description":"Mean limits overridden amount",
+            "last":"486671.92",
+            "prev":"723119.92"
+        },
+        {
+            "statistic":"meanOverridesPct",
+            "description":"Mean overrides percentage",
+            "last":"0.26%",
+            "prev":"0.38%"
+        },
+        {
+            "statistic":"meanUnusedLimits",
+            "description":"Mean unused limits amount",
+            "last":"95785680.88",
+            "prev":"87930257.73"
+        },
+        {
+            "statistic":"meanUnusedLimitsPct",
+            "description":"Mean unused limits percentage",
+            "last":"51.72%",
+            "prev":"46.75%"
+        },
+        {
+            "statistic":"meanDso",
+            "description":"Mean Days Sales Outstanding (DSO)",
+            "last":"6.68",
+            "prev":"4.95"
+        }
+    ]
+}

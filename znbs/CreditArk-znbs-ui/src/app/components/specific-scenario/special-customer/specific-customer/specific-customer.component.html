@@ -1,0 +1,346 @@
+<div *ngIf="!allow" class="loading">Loading</div>
+<section class="row">
+    <div class="col-4">
+
+        <form name="form" (ngSubmit) = "g.form.valid && onSubmit()" #g="ngForm" novalidate>
+
+            <div class="form-group">
+                <label for="maxLimitGrowth">Maximum limit growth</label>
+                <div class="row">
+                    <div class="col-6">
+                        <input type="text" class="form-control"
+                               name="maxLimitGrowth"
+                               [(ngModel)]="scenarioCustomer.parameters.maxLimitGrowth" #maxLimitGrowth="ngModel"
+                               [ngClass]="{ 'is-invalid': g.submitted && maxLimitGrowth.invalid }" required
+                               id="maxLimitGrowth"/>
+                    </div>
+
+                    <div class="col-6">
+                        <input type="text" class="form-control"
+                               name="maxLimitGrowthCli"
+                               [(ngModel)]="scenarioCustomer.parameters.maxLimitGrowthCli" #maxLimitGrowthCli="ngModel"
+                               [ngClass]="{ 'is-invalid': g.submitted && maxLimitGrowthCli.invalid }" required
+                               id="maxLimitGrowthCli" disabled/>
+                    </div>
+                </div>
+                <div *ngIf="g.submitted && maxLimitGrowth.invalid" class="invalid-feedback">
+                    <div *ngIf="maxLimitGrowth.errors.required">Maximum limit growth</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="maxLimitReduction">Maximum limit reduction</label>
+                <div class="row">
+                    <div class="col-6">
+                        <input type="text" class="form-control"
+                               name="maxLimitReduction"
+                               [(ngModel)]="scenarioCustomer.parameters.maxLimitReduction" #maxLimitReduction="ngModel"
+                               [ngClass]="{ 'is-invalid': g.submitted && maxLimitReduction.invalid }" required
+                               id="maxLimitReduction"/>
+                    </div>
+
+                    <div class="col-6">
+                        <input type="text" class="form-control"
+                               name="maxLimitReductionCli"
+                               [(ngModel)]="scenarioCustomer.parameters.maxLimitReductionCli" #maxLimitReductionCli="ngModel"
+                               [ngClass]="{ 'is-invalid': g.submitted && maxLimitReductionCli.invalid }" required
+                               id="maxLimitReductionCli" disabled/>
+                    </div>
+                </div>
+                <div *ngIf="g.submitted && maxLimitReduction.invalid" class="invalid-feedback">
+                    <div *ngIf="maxLimitReduction.errors.required">Maximum limit reduction</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="minLimitGrowth">Minimum limit growth</label>
+                <div class="row">
+                    <div class="col-6">
+                        <input type="text" class="form-control"
+                               name="minLimitGrowth"
+                               [(ngModel)]="scenarioCustomer.parameters.minLimitGrowth" #minLimitGrowth="ngModel"
+                               [ngClass]="{ 'is-invalid': g.submitted && minLimitGrowth.invalid }" required
+                               id="minLimitGrowth"/>
+                    </div>
+
+                    <div class="col-6">
+                        <input type="text" class="form-control"
+                               name="minLimitGrowthCli"
+                               [(ngModel)]="scenarioCustomer.parameters.minLimitGrowthCli" #minLimitGrowthCli="ngModel"
+                               [ngClass]="{ 'is-invalid': g.submitted && minLimitGrowthCli.invalid }" required
+                               id="minLimitGrowthCli" disabled/>
+                    </div>
+                </div>
+                <div *ngIf="g.submitted && minLimitGrowth.invalid" class="invalid-feedback">
+                    <div *ngIf="minLimitGrowth.errors.required">Minimum limit growth</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="minLimitReduction">Minimum limit reduction</label>
+                <div class="row">
+                    <div class="col-6">
+                        <input type="text" class="form-control"
+                               name="minLimitReduction"
+                               [(ngModel)]="scenarioCustomer.parameters.minLimitReduction" #minLimitReduction="ngModel"
+                               [ngClass]="{ 'is-invalid': g.submitted && minLimitReduction.invalid }" required
+                               id="minLimitReduction"/>
+                    </div>
+
+                    <div class="col-6">
+                        <input type="text" class="form-control"
+                               name="minLimitReductionCli"
+                               [(ngModel)]="scenarioCustomer.parameters.minLimitReductionCli" #minLimitReductionCli="ngModel"
+                               [ngClass]="{ 'is-invalid': g.submitted && minLimitReductionCli.invalid }" required
+                               id="minLimitReductionCli" disabled/>
+                    </div>
+                </div>
+                <div *ngIf="g.submitted && minLimitReduction.invalid" class="invalid-feedback">
+                    <div *ngIf="minLimitReduction.errors.required">Minimum limit reduction</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Worst acceptable CAS</label>
+                <div class="row">
+                    <div class="col-6">
+                        <ng-select [dropdownPosition]="'bottom'"
+                                   [searchable]="false"
+                                   [items]="contextAll.scores"
+                                   name="score" [(ngModel)]="scenarioCustomer.parameters.worstAcceptableScore">
+                        </ng-select>
+                    </div>
+
+                    <div class="col-6">
+                        <ng-select [dropdownPosition]="'bottom'"
+                                   [searchable]="false"
+                                   [items]="contextAll.scores"
+                                   name="scoreCli"
+                                   [(ngModel)]="scenarioCustomer.parameters.worstAcceptableScoreCli" disabled
+                        >
+                        </ng-select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="minAcceptedLimitUse">Minimum accepted limit use</label>
+                <div class="row">
+                    <div class="col-6">
+                        <input type="text" class="form-control"
+                               name="minAcceptedLimitUse"
+                               [(ngModel)]="scenarioCustomer.parameters.minAcceptedLimitUse" #minAcceptedLimitUse="ngModel"
+                               [ngClass]="{ 'is-invalid': g.submitted && minAcceptedLimitUse.invalid }" required
+                               id="minAcceptedLimitUse"/>
+                    </div>
+
+                    <div class="col-6">
+                        <input type="text" class="form-control"
+                               name="minAcceptedLimitUseCli"
+                               [(ngModel)]="scenarioCustomer.parameters.minAcceptedLimitUseCli" #minAcceptedLimitUseCli="ngModel"
+                               [ngClass]="{ 'is-invalid': g.submitted && minAcceptedLimitUseCli.invalid }" required
+                               id="minAcceptedLimitUseCli" disabled/>
+                    </div>
+                </div>
+
+                <div *ngIf="g.submitted && minAcceptedLimitUse.invalid" class="invalid-feedback">
+                    <div *ngIf="minAcceptedLimitUse.errors.required">Minimum accepted limit use</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="maxDso">Maximum accepted DSO (days)</label>
+                <div class="row">
+                    <div class="col-6">
+                        <input type="text" class="form-control"
+                               name="maxDso"
+                               [(ngModel)]="scenarioCustomer.parameters.maxDso" #maxDso="ngModel"
+                               [ngClass]="{ 'is-invalid': g.submitted && maxDso.invalid }"
+                               id="maxDso"/>
+                    </div>
+
+                    <div class="col-6">
+                        <input type="text" class="form-control"
+                               name="maxDsoCli"
+                               [(ngModel)]="scenarioCustomer.parameters.maxDsoCli" #maxDsoCli="ngModel"
+                               [ngClass]="{ 'is-invalid': g.submitted && maxDsoCli.invalid }" 
+                               id="maxDsoCli" disabled/>
+                    </div>
+                </div>
+
+                <div *ngIf="g.submitted && maxDso.invalid" class="invalid-feedback">
+                    <div *ngIf="maxDso.errors.required">Maximum accepted DSO (days)</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="minAcceptedRwMargin">Minimum acceptable Risk Weighted Margin</label>
+                <div class="row">
+                    <div class="col-6">
+                        <input type="text" class="form-control"
+                               name="minAcceptedRwMargin"
+                               [(ngModel)]="scenarioCustomer.parameters.minAcceptedRwMargin" #minAcceptedRwMargin="ngModel"
+                               [ngClass]="{ 'is-invalid': g.submitted && minAcceptedRwMargin.invalid }" required
+                               id="minAcceptedRwMargin"/>
+                    </div>
+
+                    <div class="col-6">
+                        <input type="text" class="form-control"
+                               name="minAcceptedRwMarginCli"
+                               [(ngModel)]="scenarioCustomer.parameters.minAcceptedRwMarginCli" #minAcceptedRwMarginCli="ngModel"
+                               [ngClass]="{ 'is-invalid': g.submitted && minAcceptedRwMarginCli.invalid }" required
+                               id="minAcceptedRwMarginCli" disabled/>
+                    </div>
+                </div>
+
+                <div *ngIf="g.submitted && minAcceptedRwMargin.invalid" class="invalid-feedback">
+                    <div *ngIf="minAcceptedRwMargin.errors.required">Minimum acceptable Risk Weighted Margin</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="salesChange">Sales change</label>
+                <div class="row">
+                    <div class="col-6">
+                        <input type="text" class="form-control"
+                               name="salesChange"
+                               [(ngModel)]="scenarioCustomer.parameters.salesChange" #salesChange="ngModel"
+                               [ngClass]="{ 'is-invalid': g.submitted && salesChange.invalid }"
+                               id="salesChange"/>
+                    </div>
+
+                    <div class="col-6">
+                        <input type="text" class="form-control"
+                               name="salesChangeCli"
+                               [(ngModel)]="scenarioCustomer.parameters.salesChangeCli" #salesChangeCli="ngModel"
+                               [ngClass]="{ 'is-invalid': g.submitted && salesChangeCli.invalid }" required
+                               id="salesChangeCli" disabled/>
+                    </div>
+                </div>
+
+
+                <div *ngIf="g.submitted && salesChange.invalid" class="invalid-feedback">
+                    <div *ngIf="salesChange.errors.required">Sales change</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="marginChange">Change in profit Margins</label>
+                <div class="row">
+                    <div class="col-6">
+                        <input type="text" class="form-control"
+                               name="marginChange"
+                               [(ngModel)]="scenarioCustomer.parameters.marginChange" #marginChange="ngModel"
+                               [ngClass]="{ 'is-invalid': g.submitted && marginChange.invalid }"
+                               id="marginChange"/>
+                    </div>
+
+                    <div class="col-6">
+                        <input type="text" class="form-control"
+                               name="marginChangeCli"
+                               [(ngModel)]="scenarioCustomer.parameters.marginChangeCli" #marginChangeCli="ngModel"
+                               [ngClass]="{ 'is-invalid': g.submitted && marginChangeCli.invalid }" required
+                               id="marginChangeCli" disabled/>
+                    </div>
+                </div>
+
+
+                <div *ngIf="g.submitted && marginChange.invalid" class="invalid-feedback">
+                    <div *ngIf="marginChange.errors.required">Change in profit Margins</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="pdChange">Change in default probabilities</label>
+                <div class="row">
+                    <div class="col-6">
+                        <input type="text" class="form-control"
+                               name="pdChange"
+                               [(ngModel)]="scenarioCustomer.parameters.pdChange" #pdChange="ngModel"
+                               [ngClass]="{ 'is-invalid': g.submitted && pdChange.invalid }"
+                               id="pdChange"/>
+                    </div>
+
+                    <div class="col-6">
+                        <input type="text" class="form-control"
+                               name="pdChangeCli"
+                               [(ngModel)]="scenarioCustomer.parameters.pdChangeCli" #pdChangeCli="ngModel"
+                               [ngClass]="{ 'is-invalid': g.submitted && pdChangeCli.invalid }" required
+                               id="pdChangeCli" disabled/>
+                    </div>
+                </div>
+
+
+                <div *ngIf="g.submitted && pdChange.invalid" class="invalid-feedback">
+                    <div *ngIf="pdChange.errors.required">Change in default probabilities</div>
+                </div>
+            </div>
+
+    
+
+            <!--<div class="form-group">-->
+            <!--<label for="userComments"> User Comments </label>-->
+            <!--<div class="row">-->
+            <!--<div class="col-6">-->
+            <!--<textarea type="text" class="form-control"-->
+            <!--name="userComments"-->
+            <!--[(ngModel)]="scenarioPortfolio.parameters.userComments" #userComments="ngModel"-->
+            <!--[ngClass]="{ 'is-invalid': g.submitted && userCommentsCli.invalid }" required-->
+            <!--id="userComments"></textarea>-->
+            <!--</div>-->
+
+            <!--<div class="col-6">-->
+            <!--<textarea type="text" class="form-control"-->
+            <!--name="userCommentsCli"-->
+            <!--[(ngModel)]="scenarioPortfolio.parameters.userCommentsCli" #userCommentsCli="ngModel"-->
+            <!--[ngClass]="{ 'is-invalid': g.submitted && userCommentsCli.invalid }" required-->
+            <!--id="userCommentsCli" disabled></textarea>-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <!--<div *ngIf="g.submitted && userComments.invalid" class="invalid-feedback">-->
+            <!--<div *ngIf="userComments.errors.required">User Comments </div>-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <button type="submit" class="btn btn-primary">Resolve</button>
+        </form>
+    </div>
+
+    <div class="col-8">
+        <section class="tabs" *ngIf="customerInfo">
+            <div class="tabs__nav">
+                <nav class="dropdown dropdown-tabs dropdown-md">
+                    <button (click)="isOpenTab = !isOpenTab" class="btn btn-secondary btn-icon-right btn-lg btn-dropdown animate" [class.open]="isOpenTab">
+                        <span class="text">{{selectedTab}}</span>
+                        <span class="icon icon-arrow_down"></span>
+                    </button>
+                    <div class="dropdown-menu animate">
+                        <div *ngFor="let tab of tabsTitles">
+                            <button (click)="onClickTab($event)" class="dropdown-item animate" [class.active]="selectedTab === tab">{{tab}}</button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="tabs__content">
+                <div class="row row-grid">
+                    <div class="col col-12 col-md-6 col-xl-4" 
+                    [ngClass]="( selectedTab === 'Highlights' ) ? 'col-xl-4' : ( selectedTab === 'Statistics' ) ? 'col-xl-6' : 'col-xl-12'" *ngFor="let card of cards">
+                        <app-clientele-card [card]="card"></app-clientele-card>
+                    </div>
+                    <!--div class="col col-12">
+                        <article class="box">
+                            <div class="box__content box__content--form">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Add your note..."></textarea>
+                                </div>
+                            </div>
+                        </article>
+                    </div>-->
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+
+

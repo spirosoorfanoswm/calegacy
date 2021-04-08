@@ -1,0 +1,87 @@
+.modal{
+    background: #1c1c1c;
+    opacity: 0.90
+}
+
+.modal-dialog{
+    z-index: 9999;
+    position: absolute;
+    left: 21vh;
+    top: 0
+}
+
+.modal-body{
+    width: 100%;
+}
+
+.radio input{
+    margin-right: 15px;
+}
+
+.modal-content{
+    width: 575px;
+}
+
+.modal-footer{
+    margin-top: 25px;
+}
+
+.form-radio
+{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    background-color: #f1f1f1;
+    color: #666;
+    top: 10px;
+    height: 30px;
+    width: 30px;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-right: 7px;
+    outline: none;
+}
+.form-radio:checked::before
+{
+    position: absolute;
+    font: 13px/1 'Open Sans', sans-serif;
+    left: 11px;
+    top: 7px;
+    content: '\02143';
+    transform: rotate(40deg);
+}
+.form-radio:hover
+{
+    background-color: #f7f7f7;
+}
+.form-radio:checked
+{
+    background-color: #f1f1f1;
+}
+label
+{
+    font: 15px/1.7 'Open Sans', sans-serif;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    cursor: pointer;
+    display:inline;
+}
+.search-box{
+    font-size: 16px;
+    padding: 20px;
+}
+.form-group div{
+    width: 30%
+}
+
+.customer-not-found {
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}

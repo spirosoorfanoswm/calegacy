@@ -1,0 +1,368 @@
+{
+  "scenarios": [
+    {
+      "scenarioId": 0,
+      "scenarioName": null,
+      "scenarioOwnerName": "jgaros",
+      "scenarioOwnerlogin": "jgaros",
+      "editable": false,
+      "statistics": {
+        "scenarioStatistics": [],
+        "limits": [],
+        "margins": [],
+        "allowances": []
+      },
+      "parameters": {
+        "maxLimitGrowth": "0.1",
+        "maxLimitReduction": "0.5",
+        "minLimitGrowth": "0.1",
+        "minLimitReduction": "0.05",
+        "minAcceptedLimitUse": "0.8",
+        "maxDso": "180",
+        "minAcceptedRwMargin": "0.07",
+        "salesChange": null,
+        "marginChange": null,
+        "pdChange": null,
+        "worstAcceptableScore": "12",
+        "userComments": null,
+        "wacc": "0.08",
+        "raroc": "0.13",
+        "creditAmount": "429000000",
+        "significantDigits": "3",
+        "minLimit": "5000",
+        "minLimitPct": null
+      },
+      "portfolios": [
+        {
+          "portfolioId": "11",
+          "portfolioName": "ΠΕΤΡΕΛΑΙΟΕΙΔΗ - ΙΔΙΩΤΙΚΕΣ ΕΤΑΙΡΕΙΕΣ",
+          "parameters": {
+            "maxLimitGrowth": null,
+            "maxLimitReduction": null,
+            "minLimitGrowth": null,
+            "minLimitReduction": null,
+            "minAcceptedLimitUse": null,
+            "maxDso": null,
+            "minAcceptedRwMargin": null,
+            "salesChange": null,
+            "marginChange": null,
+            "pdChange": null,
+            "worstAcceptableScore": null,
+            "userComments": null,
+            "maxLimitGrowthCli": "10%",
+            "maxLimitReductionCli": "50%",
+            "minLimitGrowthCli": "10%",
+            "minLimitReductionCli": "50%",
+            "minAcceptedLimitUseCli": "80%",
+            "maxDsoCli": "180",
+            "minAcceptedRwMarginCli": "7.5%",
+            "salesChangeCli": null,
+            "marginChangeCli": null,
+            "pdChangeCli": null,
+            "worstAcceptableScoreCli": "12",
+            "userCommentsCli": null
+          },
+          "statistics": {
+            "portfolioStatistics": [],
+            "limits": [],
+            "margins": [],
+            "allowances": []
+          }
+        },
+        {
+          "portfolioId": "12",
+          "portfolioName": "ΠΕΤΡΕΛΑΙΟΕΙΔΗ - ΕΞΑΓΩΓΕΣ",
+          "parameters": {
+            "maxLimitGrowth": null,
+            "maxLimitReduction": null,
+            "minLimitGrowth": null,
+            "minLimitReduction": null,
+            "minAcceptedLimitUse": null,
+            "maxDso": null,
+            "minAcceptedRwMargin": null,
+            "salesChange": null,
+            "marginChange": null,
+            "pdChange": null,
+            "worstAcceptableScore": null,
+            "userComments": null,
+            "maxLimitGrowthCli": "10%",
+            "maxLimitReductionCli": "50%",
+            "minLimitGrowthCli": "10%",
+            "minLimitReductionCli": "50%",
+            "minAcceptedLimitUseCli": "80%",
+            "maxDsoCli": "180",
+            "minAcceptedRwMarginCli": "7.5%",
+            "salesChangeCli": null,
+            "marginChangeCli": null,
+            "pdChangeCli": null,
+            "worstAcceptableScoreCli": "12",
+            "userCommentsCli": null
+          },
+          "statistics": {
+            "portfolioStatistics": [],
+            "limits": [],
+            "margins": [],
+            "allowances": []
+          }
+        },
+        {
+          "portfolioId": "13",
+          "portfolioName": "ΠΕΤΡΕΛΑΙΟΕΙΔΗ - ΔΗΜΟΣΙΟ, ΣΤΡΑΤΟΣ",
+          "parameters": {
+            "maxLimitGrowth": null,
+            "maxLimitReduction": null,
+            "minLimitGrowth": null,
+            "minLimitReduction": null,
+            "minAcceptedLimitUse": null,
+            "maxDso": null,
+            "minAcceptedRwMargin": null,
+            "salesChange": null,
+            "marginChange": null,
+            "pdChange": null,
+            "worstAcceptableScore": null,
+            "userComments": null,
+            "maxLimitGrowthCli": "10%",
+            "maxLimitReductionCli": "50%",
+            "minLimitGrowthCli": "10%",
+            "minLimitReductionCli": "50%",
+            "minAcceptedLimitUseCli": "80%",
+            "maxDsoCli": "180",
+            "minAcceptedRwMarginCli": "7.5%",
+            "salesChangeCli": null,
+            "marginChangeCli": null,
+            "pdChangeCli": null,
+            "worstAcceptableScoreCli": "12",
+            "userCommentsCli": null
+          },
+          "statistics": {
+            "portfolioStatistics": [],
+            "limits": [],
+            "margins": [],
+            "allowances": []
+          }
+        },
+        {
+          "portfolioId": "14",
+          "portfolioName": "ΠΕΤΡΕΛΑΙΟΕΙΔΗ - ΕΝΔΟΕΤΑΙΡΙΚΑ",
+          "parameters": {
+            "maxLimitGrowth": null,
+            "maxLimitReduction": null,
+            "minLimitGrowth": null,
+            "minLimitReduction": null,
+            "minAcceptedLimitUse": null,
+            "maxDso": null,
+            "minAcceptedRwMargin": null,
+            "salesChange": null,
+            "marginChange": null,
+            "pdChange": null,
+            "worstAcceptableScore": null,
+            "userComments": null,
+            "maxLimitGrowthCli": "10%",
+            "maxLimitReductionCli": "50%",
+            "minLimitGrowthCli": "10%",
+            "minLimitReductionCli": "50%",
+            "minAcceptedLimitUseCli": "80%",
+            "maxDsoCli": "180",
+            "minAcceptedRwMarginCli": "7.5%",
+            "salesChangeCli": null,
+            "marginChangeCli": null,
+            "pdChangeCli": null,
+            "worstAcceptableScoreCli": "12",
+            "userCommentsCli": null
+          },
+          "statistics": {
+            "portfolioStatistics": [],
+            "limits": [],
+            "margins": [],
+            "allowances": []
+          }
+        },
+        {
+          "portfolioId": "21",
+          "portfolioName": "ΧΗΜΙΚΑ - ΙΔΙΩΤΙΚΕΣ ΕΤΑΙΡΕΙΕΣ",
+          "parameters": {
+            "maxLimitGrowth": null,
+            "maxLimitReduction": null,
+            "minLimitGrowth": null,
+            "minLimitReduction": null,
+            "minAcceptedLimitUse": null,
+            "maxDso": null,
+            "minAcceptedRwMargin": null,
+            "salesChange": null,
+            "marginChange": null,
+            "pdChange": null,
+            "worstAcceptableScore": null,
+            "userComments": null,
+            "maxLimitGrowthCli": "10%",
+            "maxLimitReductionCli": "50%",
+            "minLimitGrowthCli": "10%",
+            "minLimitReductionCli": "50%",
+            "minAcceptedLimitUseCli": "80%",
+            "maxDsoCli": "180",
+            "minAcceptedRwMarginCli": "7.5%",
+            "salesChangeCli": null,
+            "marginChangeCli": null,
+            "pdChangeCli": null,
+            "worstAcceptableScoreCli": "12",
+            "userCommentsCli": null
+          },
+          "statistics": {
+            "portfolioStatistics": [],
+            "limits": [],
+            "margins": [],
+            "allowances": []
+          }
+        },
+        {
+          "portfolioId": "22",
+          "portfolioName": "ΧΗΜΙΚΑ - ΕΞΑΓΩΓΕΣ",
+          "parameters": {
+            "maxLimitGrowth": null,
+            "maxLimitReduction": null,
+            "minLimitGrowth": null,
+            "minLimitReduction": null,
+            "minAcceptedLimitUse": null,
+            "maxDso": null,
+            "minAcceptedRwMargin": null,
+            "salesChange": null,
+            "marginChange": null,
+            "pdChange": null,
+            "worstAcceptableScore": null,
+            "userComments": null,
+            "maxLimitGrowthCli": "10%",
+            "maxLimitReductionCli": "50%",
+            "minLimitGrowthCli": "10%",
+            "minLimitReductionCli": "50%",
+            "minAcceptedLimitUseCli": "80%",
+            "maxDsoCli": "180",
+            "minAcceptedRwMarginCli": "7.5%",
+            "salesChangeCli": null,
+            "marginChangeCli": null,
+            "pdChangeCli": null,
+            "worstAcceptableScoreCli": "12",
+            "userCommentsCli": null
+          },
+          "statistics": {
+            "portfolioStatistics": [],
+            "limits": [],
+            "margins": [],
+            "allowances": []
+          }
+        },
+        {
+          "portfolioId": "24",
+          "portfolioName": "ΧΗΜΙΚΑ - ΕΝΔΟΕΤΑΙΡΙΚΑ",
+          "parameters": {
+            "maxLimitGrowth": null,
+            "maxLimitReduction": null,
+            "minLimitGrowth": null,
+            "minLimitReduction": null,
+            "minAcceptedLimitUse": null,
+            "maxDso": null,
+            "minAcceptedRwMargin": null,
+            "salesChange": null,
+            "marginChange": null,
+            "pdChange": null,
+            "worstAcceptableScore": null,
+            "userComments": null,
+            "maxLimitGrowthCli": "10%",
+            "maxLimitReductionCli": "50%",
+            "minLimitGrowthCli": "10%",
+            "minLimitReductionCli": "50%",
+            "minAcceptedLimitUseCli": "80%",
+            "maxDsoCli": "180",
+            "minAcceptedRwMarginCli": "7.5%",
+            "salesChangeCli": null,
+            "marginChangeCli": null,
+            "pdChangeCli": null,
+            "worstAcceptableScoreCli": "12",
+            "userCommentsCli": null
+          },
+          "statistics": {
+            "portfolioStatistics": [],
+            "limits": [],
+            "margins": [],
+            "allowances": []
+          }
+        }
+      ],
+      "prospects": [
+        {
+          "parameters": {
+            "prospectId": null,
+            "description": null,
+            "customersNum": null,
+            "purchases": null,
+            "maxDso": "180",
+            "gradeInx": null,
+            "grade": null,
+            "profitMargin": null,
+            "mitigants": [
+              "ΓΡΑΜΜΑΤΕΙΑ ΕΙΣΠΡΑΚΤΕΑ",
+              "ΑΞΙΑ ΥΠΟΘΗΚΩΝ & ΠΡΟΣΗΜΕΙΩΣΕΩΝ ΠΕΛΑΤΩΝ",
+              "ΕΝΕΓΓΥΕΣ ΠΙΣΤΩΣΕΙΣ LCs/ CAD",
+              "ΕΠΙΤΑΓΕΣ ΕΓΓΥΗΣΕΩΣ ΑΟΡΙΣΤΟΥ ΧΡΟΝΟΥ",
+              "ΕΤΑΙΡΙΚΕΣ ΕΓΓΥΗΤΙΚΕΣ ΕΞΑΣΦΑΛΙΣΗΣ ΑΠΑΙΤΗΣΕΩΝ",
+              "ΜΕΤΑΧΡΟΝΟΛΟΓΗΜΕΝΕΣ ΕΠΙΤΑΓΕΣ ΙΔΙΟΥ",
+              "ΜΕΤΑΧΡΟΝΟΛΟΓΗΜΕΝΕΣ ΕΠΙΤΑΓΕΣ ΤΡΙΤΩΝ",
+              "ΠΡΟΚΑΤΑΒΟΛΗ ΠΕΛΑΤΗ ΜΕΤΡΗΤΑ",
+              "ΤΡΑΠΕΖΙΚΕΣ ΕΓΓΥΗΤΙΚΕΣ ΕΠΙΣΤΟΛΕΣ ΠΕΛΑΤΩΝ",
+              "FACTORING ΠΕΛΑΤΩΝ",
+              "FACTORING ΧΩΡΙΣ ΑΝΑΓΩΓΗ"
+            ],
+            "mitigantsValues": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "minAcceptedRwMargin": "7.5%",
+            "comments": null
+          },
+          "statistics": {
+            "prospectStatistics": []
+          }
+        }
+      ],
+      "customers": [
+        {
+          "customerId": null,
+          "customerName": null,
+          "parameters": {
+            "maxLimitGrowth": null,
+            "maxLimitReduction": null,
+            "minLimitGrowth": null,
+            "minLimitReduction": null,
+            "minAcceptedLimitUse": null,
+            "maxDso": null,
+            "minAcceptedRwMargin": null,
+            "salesChange": null,
+            "marginChange": null,
+            "pdChange": null,
+            "maxLimitGrowthCli": "10%",
+            "maxLimitReductionCli": "50%",
+            "minLimitGrowthCli": "10%",
+            "minLimitReductionCli": "50%",
+            "minAcceptedLimitUseCli": "80%",
+            "maxDsoCli": "180",
+            "minAcceptedRwMarginCli": "7.5%",
+            "salesChangeCli": null,
+            "marginChangeCli": null,
+            "pdChangeCli": null
+          }
+        }
+      ],
+      "deletedCustomers": [],
+      "deletedProspects": []
+    }
+  ],
+  "contextId": 26,
+  "snapshotDate": "2019-04-30"
+}

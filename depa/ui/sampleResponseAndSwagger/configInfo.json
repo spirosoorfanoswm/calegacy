@@ -1,0 +1,42 @@
+{
+    "loginName": "jgaros",
+    "fullName": "Garos Ioannis",
+    "organization": "Ark Analytics",
+    "contexts": {
+        "26": "HELPE MASTER / Helpe",
+        "27": "HELPE MASTER / HELPE OIL",
+        "28": "HELPE MASTER / HELPE CHEMICALS"
+    },
+    "roles": [
+        1,
+        11,
+        12,
+        15,
+        16,
+        18,
+        21,
+        31,
+        41,
+        43,
+        44
+    ],
+    "helpFiles": {
+        "0": "Contents",
+        "5": "RiskProfile",
+        "6": "RiskProfile",
+        "10": "Statistics",
+        "11": "Statistics",
+        "20": "Clientele",
+        "21": "Clientele",
+        "30": "Workingwithscenarios",
+        "40": "Portfolios",
+        "50": "Prospects",
+        "60": "SpecialCustomers",
+        "70": "Allcustomers"
+    },
+    "pwRegEx": "^(?=.*[a-z])(?=.*\\d)(?=.*[#$^+=!*()@%]).{6,16}$",
+    "changePwRequired": false,
+    "publicIp": null,
+    "version": null,
+    "copyright": null
+}

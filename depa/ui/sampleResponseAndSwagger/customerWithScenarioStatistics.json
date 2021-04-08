@@ -1,0 +1,662 @@
+{
+  "customerDetailsSnapshotDto": {
+    "behavioralScore": "11",
+    "externalScore": null,
+    "qualitiveScore": "5",
+    "casScore": "7",
+    "customerName": "ΓΕΝΙΚΟ ΕΠΙΤΕΛΕΙΟ ΑΕΡΟΠΟΡΙΑΣ (ΓΕΑ)",
+    "groupName": null,
+    "customerSince": null,
+    "industryId": "ΔΗΜΟΣΙΟ-ΣΤΡΑΤΟΣ",
+    "areaId": "Αττική",
+    "status": "Μέτριος",
+    "profitMargin": "20.24%",
+    "balance": "13,600,275.43",
+    "limit": "25,000,000.00",
+    "idData": {
+      "description": null,
+      "values": [
+        {
+          "key": "Customer name",
+          "value": "ΓΕΝΙΚΟ ΕΠΙΤΕΛΕΙΟ ΑΕΡΟΠΟΡΙΑΣ (ΓΕΑ)",
+          "type": null
+        },
+        {
+          "key": "Group",
+          "value": null,
+          "type": null
+        },
+        {
+          "key": "Customer since",
+          "value": "13-06-2002",
+          "type": null
+        },
+        {
+          "key": "VAT number",
+          "value": "90153025",
+          "type": null
+        },
+        {
+          "key": "Industry code",
+          "value": "ΔΗΜΟΣΙΟ-ΣΤΡΑΤΟΣ",
+          "type": null
+        },
+        {
+          "key": "Area code",
+          "value": "Αττική",
+          "type": null
+        }
+      ]
+    },
+    "businessData": {
+      "description": null,
+      "values": [
+        {
+          "key": "Status",
+          "value": "Μέτριος",
+          "type": null
+        },
+        {
+          "key": "Profit margin",
+          "value": "20.24%",
+          "type": null
+        },
+        {
+          "key": "Balance",
+          "value": "13,600,275.43",
+          "type": null
+        },
+        {
+          "key": "Limit",
+          "value": "25,000,000.00",
+          "type": null
+        },
+        {
+          "key": "Sales",
+          "value": "8,429,345.92",
+          "type": null
+        },
+        {
+          "key": "VAT on sales",
+          "value": "40,854.51",
+          "type": null
+        },
+        {
+          "key": "Returned goods",
+          "value": "0.00",
+          "type": null
+        },
+        {
+          "key": "VAT on returns",
+          "value": "0.00",
+          "type": null
+        },
+        {
+          "key": "Payments",
+          "value": "-9,363,027.68",
+          "type": null
+        },
+        {
+          "key": "Rebates",
+          "value": "-309,109.46",
+          "type": null
+        },
+        {
+          "key": "Write Offs",
+          "value": "0.00",
+          "type": null
+        }
+      ]
+    },
+    "creditScoreData": {
+      "description": null,
+      "values": [
+        {
+          "key": "Behavioral",
+          "value": "11",
+          "type": null
+        },
+        {
+          "key": "External",
+          "value": null,
+          "type": null
+        },
+        {
+          "key": "Qualitative",
+          "value": "5",
+          "type": null
+        },
+        {
+          "key": "CAS",
+          "value": "7",
+          "type": null
+        }
+      ]
+    },
+    "buckets": {
+      "description": "Balance aging",
+      "values": [
+        {
+          "key": "1-30 days past due",
+          "value": "1,590.44",
+          "type": null
+        },
+        {
+          "key": "31-60 days past-due",
+          "value": "0.00",
+          "type": null
+        },
+        {
+          "key": "61-90 days past-due",
+          "value": "0.00",
+          "type": null
+        },
+        {
+          "key": "91-120 days past-due",
+          "value": "22,965.94",
+          "type": null
+        },
+        {
+          "key": "121 days and over past-due",
+          "value": "4,491,669.86",
+          "type": null
+        },
+        {
+          "key": "Total",
+          "value": "4,516,226.24",
+          "type": null
+        }
+      ]
+    },
+    "mitigants": {
+      "description": "Mitigants",
+      "values": [
+        {
+          "key": "ΓΡΑΜΜΑΤΕΙΑ ΕΙΣΠΡΑΚΤΕΑ",
+          "value": "0.00",
+          "type": null
+        },
+        {
+          "key": "ΑΞΙΑ ΥΠΟΘΗΚΩΝ & ΠΡΟΣΗΜΕΙΩΣΕΩΝ ΠΕΛΑΤΩΝ",
+          "value": "0.00",
+          "type": null
+        },
+        {
+          "key": "ΕΝΕΓΓΥΕΣ ΠΙΣΤΩΣΕΙΣ LCs/ CAD",
+          "value": "0.00",
+          "type": null
+        },
+        {
+          "key": "ΕΠΙΤΑΓΕΣ ΕΓΓΥΗΣΕΩΣ ΑΟΡΙΣΤΟΥ ΧΡΟΝΟΥ",
+          "value": "0.00",
+          "type": null
+        },
+        {
+          "key": "ΕΤΑΙΡΙΚΕΣ ΕΓΓΥΗΤΙΚΕΣ ΕΞΑΣΦΑΛΙΣΗΣ ΑΠΑΙΤΗΣΕΩΝ",
+          "value": "0.00",
+          "type": null
+        },
+        {
+          "key": "ΜΕΤΑΧΡΟΝΟΛΟΓΗΜΕΝΕΣ ΕΠΙΤΑΓΕΣ ΙΔΙΟΥ",
+          "value": "0.00",
+          "type": null
+        },
+        {
+          "key": "ΜΕΤΑΧΡΟΝΟΛΟΓΗΜΕΝΕΣ ΕΠΙΤΑΓΕΣ ΤΡΙΤΩΝ",
+          "value": "0.00",
+          "type": null
+        },
+        {
+          "key": "ΠΡΟΚΑΤΑΒΟΛΗ ΠΕΛΑΤΗ ΜΕΤΡΗΤΑ",
+          "value": "0.00",
+          "type": null
+        },
+        {
+          "key": "ΤΡΑΠΕΖΙΚΕΣ ΕΓΓΥΗΤΙΚΕΣ ΕΠΙΣΤΟΛΕΣ ΠΕΛΑΤΩΝ",
+          "value": "0.00",
+          "type": null
+        },
+        {
+          "key": "FACTORING ΠΕΛΑΤΩΝ",
+          "value": "0.00",
+          "type": null
+        },
+        {
+          "key": "FACTORING ΧΩΡΙΣ ΑΝΑΓΩΓΗ",
+          "value": "0.00",
+          "type": null
+        },
+        {
+          "key": "Total",
+          "value": "0.00",
+          "type": null
+        }
+      ]
+    },
+    "exposures": [
+      {
+        "key": "Balance",
+        "value": "13,600,275.43",
+        "type": null
+      },
+      {
+        "key": "Limit",
+        "value": "25,000,000.00",
+        "type": null
+      }
+    ],
+    "activities": [
+      {
+        "key": "Sales",
+        "value": "8,429,345.92",
+        "type": null
+      },
+      {
+        "key": "VAT on sales",
+        "value": "40,854.51",
+        "type": null
+      },
+      {
+        "key": "Returned goods",
+        "value": "0.00",
+        "type": null
+      },
+      {
+        "key": "VAT on returns",
+        "value": "0.00",
+        "type": null
+      },
+      {
+        "key": "Payments",
+        "value": "-9,363,027.68",
+        "type": null
+      },
+      {
+        "key": "Rebates",
+        "value": "-309,109.46",
+        "type": null
+      },
+      {
+        "key": "Write Offs",
+        "value": "0.00",
+        "type": null
+      }
+    ]
+  },
+  "customerDetailsStatisticsDto": {
+    "statistics": [
+      {
+        "key": "Period start-end",
+        "value": "Period start-end",
+        "type": null,
+        "values": [
+          "30-04-2019",
+          "30-04-2018"
+        ]
+      },
+      {
+        "key": "Months in period",
+        "value": "Months in period",
+        "type": null,
+        "values": [
+          "12",
+          "12"
+        ]
+      },
+      {
+        "key": "Maximum snapshot exposure",
+        "value": "Maximum snapshot exposure",
+        "type": null,
+        "values": [
+          "16,020,063.09",
+          "17,365,370.41"
+        ]
+      },
+      {
+        "key": "Date of maximum snapshot exposure",
+        "value": "Date of maximum snapshot exposure",
+        "type": null,
+        "values": [
+          "31-05-2018",
+          "31-03-2018"
+        ]
+      },
+      {
+        "key": "Minimum snapshot exposure",
+        "value": "Minimum snapshot exposure",
+        "type": null,
+        "values": [
+          "4,515,339.94",
+          "4,505,112.89"
+        ]
+      },
+      {
+        "key": "Date of minimum snapshot exposure",
+        "value": "Date of minimum snapshot exposure",
+        "type": null,
+        "values": [
+          "31-12-2018",
+          "31-12-2017"
+        ]
+      },
+      {
+        "key": "Maximum past-due amount",
+        "value": "Maximum past-due amount",
+        "type": null,
+        "values": [
+          "6,850,393.07",
+          "4,724,536.93"
+        ]
+      },
+      {
+        "key": "Date of maximum past-due amount",
+        "value": "Date of maximum past-due amount",
+        "type": null,
+        "values": [
+          "30-06-2018",
+          "31-05-2017"
+        ]
+      },
+      {
+        "key": "Average snapshot exposure",
+        "value": "Average snapshot exposure",
+        "type": null,
+        "values": [
+          "11,147,058.79",
+          "11,147,058.79"
+        ]
+      },
+      {
+        "key": "Average snapshot turnover",
+        "value": "Average snapshot turnover",
+        "type": null,
+        "values": [
+          "6,873,889.33",
+          "6,810,720.34"
+        ]
+      },
+      {
+        "key": "Average snapshot payments",
+        "value": "Average snapshot payments",
+        "type": null,
+        "values": [
+          "-5,986,039.34",
+          "-6,858,894.51"
+        ]
+      },
+      {
+        "key": "Worst behavioral score",
+        "value": "Worst behavioral score",
+        "type": null,
+        "values": [
+          "11",
+          "11"
+        ]
+      },
+      {
+        "key": "Date of worst behavioral score",
+        "value": "Date of worst behavioral score",
+        "type": null,
+        "values": [
+          "30-04-2019",
+          "30-04-2019"
+        ]
+      },
+      {
+        "key": "Worst CreditArk score",
+        "value": "Date of worst behavioral score",
+        "type": null,
+        "values": [
+          "7",
+          "7"
+        ]
+      },
+      {
+        "key": "Date of worst CreditArk score",
+        "value": "Date of worst behavioral score",
+        "type": null,
+        "values": [
+          "30-04-2019",
+          "30-04-2018"
+        ]
+      }
+    ]
+  },
+  "customerDetailsBehavioralDto": {
+    "behavioral": {
+      "description": null,
+      "values": []
+    }
+  },
+  "customerDetailsQualitiveDto": {
+    "dateOfAssesment": "30-04-2019",
+    "score": "5",
+    "data": null
+  },
+  "customerDetailsExternalDataDto": {
+    "dateOfAssesment": "13-06-2002",
+    "score": null,
+    "data": null
+  },
+  "customerDetailsIFRSDto": {
+    "lifePd": "4.34%",
+    "provisions": "440,325.18",
+    "newProvisions": "413,199.56",
+    "difference": "-27,125.61",
+    "values": [
+      {
+        "key": "Uncovered",
+        "value": null,
+        "type": null,
+        "values": [
+          "13,600,275.43",
+          "70%",
+          "9,520,192.80",
+          "413,199.56",
+          "0"
+        ]
+      },
+      {
+        "key": "ΓΡΑΜΜΑΤΕΙΑ ΕΙΣΠΡΑΚΤΕΑ",
+        "value": null,
+        "type": null,
+        "values": [
+          "0.00",
+          "100%",
+          "0.00",
+          "0.00",
+          "1"
+        ]
+      },
+      {
+        "key": "ΑΞΙΑ ΥΠΟΘΗΚΩΝ & ΠΡΟΣΗΜΕΙΩΣΕΩΝ ΠΕΛΑΤΩΝ",
+        "value": null,
+        "type": null,
+        "values": [
+          "0.00",
+          "50%",
+          "0.00",
+          "0.00",
+          "2"
+        ]
+      },
+      {
+        "key": "ΕΝΕΓΓΥΕΣ ΠΙΣΤΩΣΕΙΣ LCs/ CAD",
+        "value": null,
+        "type": null,
+        "values": [
+          "0.00",
+          "0%",
+          "0.00",
+          "0.00",
+          "3"
+        ]
+      },
+      {
+        "key": "ΕΠΙΤΑΓΕΣ ΕΓΓΥΗΣΕΩΣ ΑΟΡΙΣΤΟΥ ΧΡΟΝΟΥ",
+        "value": null,
+        "type": null,
+        "values": [
+          "0.00",
+          "75%",
+          "0.00",
+          "0.00",
+          "4"
+        ]
+      },
+      {
+        "key": "ΕΤΑΙΡΙΚΕΣ ΕΓΓΥΗΤΙΚΕΣ ΕΞΑΣΦΑΛΙΣΗΣ ΑΠΑΙΤΗΣΕΩΝ",
+        "value": null,
+        "type": null,
+        "values": [
+          "0.00",
+          "100%",
+          "0.00",
+          "0.00",
+          "5"
+        ]
+      },
+      {
+        "key": "ΜΕΤΑΧΡΟΝΟΛΟΓΗΜΕΝΕΣ ΕΠΙΤΑΓΕΣ ΙΔΙΟΥ",
+        "value": null,
+        "type": null,
+        "values": [
+          "0.00",
+          "100%",
+          "0.00",
+          "0.00",
+          "6"
+        ]
+      },
+      {
+        "key": "ΜΕΤΑΧΡΟΝΟΛΟΓΗΜΕΝΕΣ ΕΠΙΤΑΓΕΣ ΤΡΙΤΩΝ",
+        "value": null,
+        "type": null,
+        "values": [
+          "0.00",
+          "25%",
+          "0.00",
+          "0.00",
+          "7"
+        ]
+      },
+      {
+        "key": "ΠΡΟΚΑΤΑΒΟΛΗ ΠΕΛΑΤΗ ΜΕΤΡΗΤΑ",
+        "value": null,
+        "type": null,
+        "values": [
+          "0.00",
+          "0%",
+          "0.00",
+          "0.00",
+          "8"
+        ]
+      },
+      {
+        "key": "ΤΡΑΠΕΖΙΚΕΣ ΕΓΓΥΗΤΙΚΕΣ ΕΠΙΣΤΟΛΕΣ ΠΕΛΑΤΩΝ",
+        "value": null,
+        "type": null,
+        "values": [
+          "0.00",
+          "0%",
+          "0.00",
+          "0.00",
+          "9"
+        ]
+      },
+      {
+        "key": "FACTORING ΠΕΛΑΤΩΝ",
+        "value": null,
+        "type": null,
+        "values": [
+          "0.00",
+          "0%",
+          "0.00",
+          "0.00",
+          "10"
+        ]
+      },
+      {
+        "key": "FACTORING ΧΩΡΙΣ ΑΝΑΓΩΓΗ",
+        "value": null,
+        "type": null,
+        "values": [
+          "0.00",
+          "0%",
+          "0.00",
+          "0.00",
+          "11"
+        ]
+      },
+      {
+        "key": "Totals",
+        "value": null,
+        "type": null,
+        "values": [
+          "13600275.43",
+          "",
+          "9520192.8",
+          "413199.56",
+          "13"
+        ]
+      }
+    ]
+  },
+  "customerScenarioStatisticsDto": {
+    "data": {
+      "description": "Projection on customer's statistics",
+      "values": [
+        {
+          "key": "Description",
+          "value": "Value",
+          "type": null
+        },
+        {
+          "key": "Projected turnover",
+          "value": "72,991,857.90",
+          "type": null
+        },
+        {
+          "key": "Maximum acceptable limit",
+          "value": "85,300,000.00",
+          "type": null
+        },
+        {
+          "key": "Proposed limit",
+          "value": "12,500,000.00",
+          "type": null
+        },
+        {
+          "key": "Effective Days Sales Outstanding (DSO)",
+          "value": "61",
+          "type": null
+        },
+        {
+          "key": "One year Probability of Default (PD)",
+          "value": "5.43%",
+          "type": null
+        },
+        {
+          "key": "Loss Given Default (LGD)",
+          "value": "70%",
+          "type": null
+        },
+        {
+          "key": "Funding cost (as a percentage on turnover)",
+          "value": "1.22%",
+          "type": null
+        },
+        {
+          "key": "Risk Weighted profit Margin (RWM)",
+          "value": "18.21%",
+          "type": null
+        },
+        {
+          "key": "Required capital cushion",
+          "value": "430,045.90",
+          "type": null
+        }
+      ]
+    }
+  }
+}

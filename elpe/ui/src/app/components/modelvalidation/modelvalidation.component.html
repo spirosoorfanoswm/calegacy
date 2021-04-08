@@ -1,0 +1,22 @@
+<section class="list">
+
+ 
+    <div class="table-responsive" *ngIf="data">
+        <div *ngFor="let rule of data">
+            {{rule.portfolio}}
+            
+            <app-modelvalidation-table
+                [data]="rule.rules">
+            </app-modelvalidation-table>
+
+        </div>
+            
+    </div>
+
+
+
+</section>
+
+
+
+

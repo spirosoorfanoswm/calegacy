@@ -1,0 +1,26 @@
+<div class="table-responsive">
+    <table class="table table-striped" cellspacing="0" cellpadding="0">
+        <thead>
+        <tr>
+            <th>Statistic</th>
+            <th>Period End</th>
+            <th></th>
+        </tr>
+        <tr>
+            <th class="secondary"></th>
+            <th>{{data.lastPeriod}}</th>
+            <th>{{data.previousPeriod}}</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let dataitem of data.clientStatisticItemDtos"> 
+            <td *ngIf="dataitem.statistic=='snpa'"><b>{{ dataitem.description }}</b></td>
+            <td *ngIf="dataitem.statistic!='snpa'">{{ dataitem.description }}</td>
+            <td *ngIf="dataitem.last.includes('%')">{{ dataitem.last }}</td>
+            <td *ngIf="!dataitem.last.includes('%')">{{ dataitem.last | number }}</td>
+            <td *ngIf="dataitem.prev.includes('%')">{{ dataitem.prev }}</td>
+            <td *ngIf="!dataitem.prev.includes('%')">{{ dataitem.prev | number }}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

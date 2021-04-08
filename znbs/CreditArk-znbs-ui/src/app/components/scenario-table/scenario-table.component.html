@@ -1,0 +1,17 @@
+<div class="table-responsive">
+    <table *ngIf="header" class="table table-striped" cellspacing="0" cellpadding="0">
+        <thead>
+        <tr>
+            <th>Statistic</th>
+            <th *ngFor="let dataitem of header['values']"> {{ dataitem }}</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let dataitem of dataStats; let i = index">
+            <td *ngIf="i != 0">{{ dataitem.key }}</td>
+            <td *ngIf="i != 0">{{ dataitem.values[0] && dataitem.values[0].includes('%') ? dataitem.values[0] : dataitem.values[0] | number}}</td>
+            <td *ngIf="i != 0">{{ dataitem.values[1] &&  dataitem.values[1].includes('%') ? dataitem.values[1] : dataitem.values[1] | number}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

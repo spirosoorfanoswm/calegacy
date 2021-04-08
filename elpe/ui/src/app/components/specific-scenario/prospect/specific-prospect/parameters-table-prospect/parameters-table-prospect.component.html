@@ -1,0 +1,137 @@
+<!-- @todo make dynamic COMPONENT!!!  -->
+<form name="form" (ngSubmit)="g.form.valid && onSubmit()" #g="ngForm" novalidate>
+
+    <div class="form-group">
+        <div class="row">
+            <div class="col-12">
+                <label for="description">Description</label>
+                <input type="text" class="form-control"
+                       name="desr"
+                       [(ngModel)]="scenarioProspect.parameters.description" #description="ngModel"
+                       [ngClass]="{ 'is-invalid': g.submitted && description.invalid }" required
+                       id="description"/>
+            </div>
+        </div>
+        <div *ngIf="g.submitted && description.invalid" class="invalid-feedback">
+            <div *ngIf="description.errors.required">Description is required</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="row">
+            <div class="col-12">
+                <label for="minAcceptedRwMargin"> Minimum accepted Risk Weighted Margin </label>
+                <input type="text" class="form-control"
+                       name="minAcceptedRwMargin"
+                       [(ngModel)]="scenarioProspect.parameters.minAcceptedRwMargin" #minAcceptedRwMargin="ngModel"
+                       [ngClass]="{ 'is-invalid': g.submitted && minAcceptedRwMargin.invalid }" required
+                       id="minAcceptedRwMargin"/>
+            </div>
+        </div>
+        <div *ngIf="g.submitted && minAcceptedRwMargin.invalid" class="invalid-feedback">
+            <div *ngIf="minAcceptedRwMargin.errors.required">Minimum accepted Risk Weighted Margin is required</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="row">
+            <div class="col-12">
+                <label for="customersNum"> Number of prospective customers </label>
+                <input type="text" class="form-control"
+                       name="customersNum"
+                       [(ngModel)]="scenarioProspect.parameters.customersNum" #customersNum="ngModel"
+                       [ngClass]="{ 'is-invalid': g.submitted && customersNum.invalid }" required
+                       id="customersNum"/>
+            </div>
+        </div>
+        <div *ngIf="g.submitted && customersNum.invalid" class="invalid-feedback">
+            <div *ngIf="customersNum.errors.required">Number of prospective customers is required</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="row">
+            <div class="col-12">
+                <label for="customersNum"> Purchases </label>
+                <input type="text" class="form-control"
+                       name="purchases"
+                       [(ngModel)]="scenarioProspect.parameters.purchases" #purchases="ngModel"
+                       [ngClass]="{ 'is-invalid': g.submitted && purchases.invalid }" required
+                       id="purchases"/>
+            </div>
+        </div>
+        <div *ngIf="g.submitted && purchases.invalid" class="invalid-feedback">
+            <div *ngIf="purchases.errors.required">Purchases is required</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="row">
+            <div class="col-12">
+                <label for="customersNum">Maximum accepted DSO (days) </label>
+                <input type="text" class="form-control"
+                       name="maxDso"
+                       [(ngModel)]="scenarioProspect.parameters.maxDso" #maxDso="ngModel"
+                       [ngClass]="{ 'is-invalid': g.submitted && maxDso.invalid }"
+                       id="maxDso"/>
+            </div>
+        </div>
+        <div *ngIf="g.submitted && maxDso.invalid" class="invalid-feedback">
+            <div *ngIf="maxDso.errors.required">maxDso is required</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="row">
+            <div class="col-12">
+                <label for="customersNum"> Profit Margin </label>
+                <input type="text" class="form-control"
+                       name="profitMargin"
+                       [(ngModel)]="scenarioProspect.parameters.profitMargin" #profitMargin="ngModel"
+                       [ngClass]="{ 'is-invalid': g.submitted && profitMargin.invalid }" required
+                       id="maxDso"/>
+            </div>
+        </div>
+        <div *ngIf="g.submitted && profitMargin.invalid" class="invalid-feedback">
+            <div *ngIf="profitMargin.errors.required">maxDso is required</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="row">
+            <div class="col-12">
+                <label> Grade </label>
+
+                <ng-select [dropdownPosition]="'bottom'"
+                           [searchable]="false"
+                           [items]="contextAll.grades"
+                           name="grade"
+                           [(ngModel)]="scenarioProspect.parameters.grade"
+                >
+                </ng-select>
+            </div>
+        </div>
+    </div>
+
+    <h4 style="margin-top: 15px">Mitigants</h4>
+    <div class="form-group">
+        <div class="row">
+            <div class="col-6" *ngFor="let prospect of scenarioProspect.parameters.mitigants; let i = index">
+                <label [for]="prospect">{{ prospect }}</label>
+                <input type="text" class="form-control"
+                       [name]="'prospect' + i"
+                       [(ngModel)]="scenarioProspect.parameters.mitigantsValues[i]" #validate="ngModel"
+                       [ngClass]="{ 'is-invalid': g.submitted && validate.invalid }" required
+                       [id]="prospect"/>
+
+                <div *ngIf="g.submitted && validate.invalid " class="invalid-feedback">
+                    <div *ngIf="validate.errors.required">Required Field</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <button style="margin-top:15px" type="submit" class="btn btn-primary">Save</button>
+    <div *ngIf="!allow" class="loading">Loading</div>
+</form>

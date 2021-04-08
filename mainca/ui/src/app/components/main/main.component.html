@@ -1,0 +1,74 @@
+<section class="heading">
+    <div class="row flex-column flex-lg-row align-items-stretch row-grid align-items-lg-center justify-content-between">
+        <div class="col col-auto">
+            <!--<h1>Clientele – <span>Department A</span></h1>-->
+            <h1>{{ title }}</h1>
+        </div>
+
+        <div class="col col-auto">
+            <div class="row flex-column flex-sm-row row-grid">
+
+                <!-- BUSINESS UNIT -->
+                <div class="col col-auto" (focusout)="onBlurBusinesUnitMethod()" (click)="(showHideBusinesUnit) ? showHideBusinesUnit = false : showHideBusinesUnit = true">
+                    <div class="dropdown">
+                        <button [ngClass]="{'open': showHideBusinesUnit == true, '': showHideBusinesUnit == false}" class="btn btn-white btn-icon-left btn-icon-right btn-dropdown btn-lg" type="button" id="dropdownUnit" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="icon icon-filter"></span>
+                            <span class="text">
+                                Business Unit: <span>{{ businessUnit }}</span>
+                            </span>
+                            <span class="icon icon-arrow_down"></span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-full animate" aria-labelledby="dropdownMenuButton">
+                            <button (click)="changeBusinessUnitValue(business); showHideBusinesUnit = true" *ngFor="let business of businessUnitData | keyvalue" class="dropdown-item animate">{{ business.value }}</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DATE FROM -->
+                <div class="col col-auto" (focusout)="showHideDateFrom = false" 
+                    (click)="(showHideDateFrom) ? showHideDateFrom = false : showHideDateFrom = true">
+                    <div class="dropdown">
+                        <button 
+                        [ngClass]="{'open': showHideDateFrom === true, '': showHideDateFrom === false}" 
+                        class="btn btn-white btn-icon-left btn-icon-right btn-dropdown btn-lg" 
+                        type="button" id="dropdownDateDrom" 
+                        data-toggle="dropdown" 
+                        aria-haspopup="true" 
+                        aria-expanded="false">
+                            <span class="icon icon-calendar"></span>
+                            <span class="text">
+                                Snapshot date from: <span>{{ dateFrom | date: 'yyyy-MM-dd'}}</span>
+                            </span>
+                            <span class="icon icon-arrow_down"></span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-full animate"
+                             aria-labelledby="dropdownMenuButton">
+                            <button (click)="changeSnapshotDateFrom(option); showHideDateFrom = true;" 
+                            *ngFor="let option of options" 
+                            class="dropdown-item animate">{{ option | date: 'dd/MM/yyyy'}}</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DATE TO -->
+                <div class="col col-auto" (focusout)="onBlurPeriodMethod()" (click)="(showHideComparisonPeriod) ? showHideComparisonPeriod = false : showHideComparisonPeriod = true">
+                    <div class="dropdown">
+                        <button [ngClass]="{ 'open': showHideComparisonPeriod == true, '': showHideComparisonPeriod == false }" class="btn btn-white btn-icon-left btn-icon-right btn-dropdown btn-lg" type="button" id="dropdownDateDrom" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <!--span class="icon icon-calendar"></span>-->
+                            <span class="text">
+                                Comparison Period: <span>{{ comparisonPeriod }}</span>
+                            </span>
+                            <span class="icon icon-arrow_down"></span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-full animate" aria-labelledby="dropdownMenuButton">
+                            <button (click)="changeComparisonPeriod(period.period); showHideComparisonPeriod = true" *ngFor="let period of periods" class="dropdown-item animate">{{ period.desc }}</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+<!--<div *ngIf="!allow" class="loading">Loading</div> -->

@@ -1,0 +1,21 @@
+export const environment = {
+    production: false,
+    clienteleLengthLoad: 100,
+    vatLabel:'VAT number',
+    url: 'http://localhost:3001',
+    configinfo: '/configinfo',
+    contextinfo: '/contextinfo',
+    clientdistribution: '/clienteledistribution',
+    clientelestatistics: '/clientelestatistics',
+    clientelestatisticsgraph: '/clientelestatisticsgraph',
+    customers: '/customers',
+    customersDev: '/customerDev',
+    searchcustomers: '/customerSearch',
+    scenarios: '/scenarios',
+    scenarios_put_post_delete: '/scenarios',
+    scenario_template: '/template',
+    customer:'/customer',
+    modelvalidation:'/modelValidationRules',
+    exportreports:'/exportreports',
+    download:'/export/downloadfile'
+};

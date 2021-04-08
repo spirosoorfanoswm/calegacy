@@ -1,0 +1,28 @@
+.modal{
+    background: #1c1c1c;
+    opacity: 0.90
+}
+
+.modal-dialog{
+    z-index: 9999;
+    position: absolute;
+    left: 21vh;
+}
+
+.modal-body{
+    width: 100%;
+}
+
+.radio input{
+    margin-right: 15px;
+}
+
+.modal-content{
+    width: 575px;
+}
+
+.balloon {
+    margin: 1em auto;
+    font: normal 64px/0.9 Constantia,Palatino,"Palatino Linotype","Palatino LT STD","Times New Roman",serif;
+    width: 8em;
+}

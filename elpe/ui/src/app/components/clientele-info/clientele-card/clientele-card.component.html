@@ -1,0 +1,32 @@
+<article class="box">
+    <div class="box__title text-center">
+        <h2>{{card.title}}</h2>   
+    </div>
+    <table class="table table-striped-yellow" *ngIf="card.title ==='Provisions'">
+        <th>PD</th><td>{{lifePd}}</td>
+        <th>Provisions</th><td>{{provisions}}</td>
+        <th>New provisions</th><td>{{newprov}}</td>	
+        <th>Difference</th><td>{{diff}}</td>
+    </table>
+    <div class="box__content box__content--table">
+        <table class="table table-striped-yellow">
+            <tr *ngIf="card.title ==='Provisions'">
+                <th>Secured by</th>
+                <th>Exposure</th>
+                <th>LGD</th>
+                <th>Loss Severity</th>
+                <th>ECL</th>
+            </tr>
+            <tbody>
+            <tr *ngFor="let item of card.table; let i = index" [class.hide]="i > 8 && showMode">
+                <th>{{item.key}}</th>
+                <td *ngIf="!item.values">{{ item.value }}</td>
+                <td *ngFor="let value of item.values">{{ value }}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div *ngIf="card.table.length > 8" class="box__content box__content--readmore text-center">
+        <button (click)="showMode =! showMode" class="btn btn-primary animate">{{showMode ? 'See More' : 'See Less'}}</button>
+    </div>
+</article>

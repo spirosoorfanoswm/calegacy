@@ -1,0 +1,108 @@
+<section class="boxes">
+    <div class="row row-grid">
+        <div *ngIf="this.dataStatistics" class="col col-12 col-md-6 col-xl-6">
+            <article class="box">
+                <div class="box__title text-center">
+                    <h2><span class="icon icon-risk"></span>Risk Profile</h2>
+                </div>
+                <div *ngFor="let dataitem of dataRisk" 
+                    class="box__content box__content--warning">
+                    <div class="row">
+                        <div class="col col-12">
+                            <div class="box__date">{{ dataitem.date }}</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-6">
+                            <div class="box__label">Total Customers:</div>
+                            <div class="box__value">{{ dataitem.totalCustomers  | number}}</div>
+                        </div>
+                        <div class="col col-6">
+                            <div class="box__label">Total Exposure:</div>
+                            <div class="box__value">{{ dataitem.totalExposure | number}}</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--<div *ngFor="let dataitem of dataDistributionStatistics" 
+                    class="box__content box__content--warning">
+
+                    <div class="row">
+                        <div class="col col-12">
+                            <div class="box__date">{{dataitem.description}}</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-6">
+                            <div *ngIf="dataitem.statistic === 'dates'" class="box__value">{{ dataitem.last}}</div>
+                            <div *ngIf="dataitem.statistic != 'dates'" class="box__value">{{ dataitem.last  | number}}</div>
+                        </div>
+                        <div class="col col-6">
+                            <div *ngIf="dataitem.statistic === 'dates'" class="box__value">{{ dataitem.prev}}</div>
+                            <div *ngIf="dataitem.statistic != 'dates'" class="box__value">{{ dataitem.prev | number}}</div>
+                        </div>
+                    </div>
+
+                </div> -->
+
+                <div class="box__content box__content--readmore text-center">
+                    <button routerLink="/risk-profile" class="btn btn-primary animate">See More</button>
+                </div>
+            </article>
+        </div>
+        <div *ngIf="dataStatistics" class="col col-12 col-md-6 col-xl-6">
+            <article class="box">
+                <div class="box__title text-center">
+                    <h2><span class="icon icon-statistics"></span>Statistics</h2>
+                </div>
+                <div class="box__content box__content--warning">
+                    <div class="row">
+                        <div class="col col-12 text-center">
+                            <div class="box__date">{{ dataStatistics.lastPeriod }}</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-12 text-center">
+                            <div class="box__label">Mean Exposure:</div>
+                            <div class="box__value">{{ meanExposure.last | number }}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box__content box__content--warning">
+                    <div class="row">
+                        <div class="col col-12 text-center">
+                            <div class="box__date">{{ dataStatistics.previousPeriod }}</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-12 text-center">
+                            <div class="box__label">Mean Exposure:</div>
+                            <div class="box__value">{{ meanExposure.prev | number }}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box__content box__content--readmore text-center">
+                    <button routerLink="/statistics" class="btn btn-primary animate">See More</button>
+                </div>
+            </article>
+        </div>
+        <!--<div class="col col-12 col-md-6 col-xl-4">
+            <article class="box">
+                <div class="box__title text-center">
+                    <h2><span class="icon icon-clientele"></span>Clientele</h2>
+                </div>
+                <div class="box__content box__content--chart">
+                    <div class="row">
+                        <div class="col col-12 text-center">
+                            <img class="img-fluid" src="/assets/img/chart-sm.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="box__content box__content--readmore text-center">
+                    <button (click)="changeTitle('Clientele')" routerLink="/clientele" class="btn btn-primary animate">See More</button>
+                </div>
+            </article>
+        </div> -->
+    </div>
+</section>
+

@@ -1,0 +1,58 @@
+<!-- Header -->
+<header>
+    <nav class="h-100">
+        <ul class="nav justify-content-end align-items-center h-100">
+            <li class="nav-item"
+             (mouseover)="userOpen = true" 
+             (mouseleave)="userOpen = false">
+                <div class="dropdown">
+                        <span 
+                        [ngClass]="(messageReceived && messageReceived?.length) ? 'badge badge-pill badge-success' : 'badge badge-pill badge-secondary'"
+                            #popover="ngbPopover" 
+                            placement="left" 
+                            ngbPopover={{receivedMessage}} 
+                            popover-trigger="none"
+                            (click)="openPop(popover)">
+                            {{messageReceived}}
+                        </span>
+                    <button 
+                    [ngClass]="{'open': userOpen == true, '': userOpen == false}" 
+                    class="btn btn-plain btn-icon-left btn-icon-right" 
+                    type="button" id="dropdownAccount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <span class="icon icon-account"></span>
+                        <span class="d-none d-lg-block">{{ configInfo.fullName }}</span>
+                        <span class="icon icon-arrow_down"></span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-balloon animate" aria-labelledby="dropdownMenuButton">
+                        <button class="dropdown-item animate"  (click)="openModal()">Log Out</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div [ngStyle]="{'display':display}" class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Logout</h5>
+           
+            <button type="button" class="close" (click)="onCloseHandled()" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="text-center">
+                <img class="img-fluid" src="/assets/img/icons8-box-important-64.png">
+            </div>
+            <div class="text-center">
+                You are about to exit the application.Potential unsaved data will be lost.Are you sure you want to logout?
+            </div>	
+        </div>
+        <div class="modal-footer">
+            <a class="btn btn-primary" href="/util/logout">OK</a>
+            <button type="button" class="btn btn-primary" (click)="onCloseHandled()">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<div [ngStyle]="{'display':display}" class="modal" role="dialog"></div>

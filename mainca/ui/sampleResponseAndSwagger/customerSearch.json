@@ -1,0 +1,15 @@
+[ 
+    { 
+       "customerDetailsSnapshotDto":null,
+       "customerDetailsStatisticsDto":null,
+       "customerDetailsBehavioralDto":null,
+       "customerDetailsQualitiveDto":null,
+       "customerDetailsExternalDataDto":null,
+       "customerDetailsIFRSDto":null,
+       "customerId":"1069",
+       "portfolioId":11,
+       "portfolio":"ΠΕΤΡΕΛΑΙΟΕΙΔΗ - ΙΔΙΩΤΙΚΕΣ ΕΤΑΙΡΕΙΕΣ",
+       "vatNumber":"94384285",
+       "customerName":"ΑΙΓΑΙΟΝ ΟΙΛ"
+    }
+]

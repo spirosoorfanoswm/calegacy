@@ -1,0 +1,113 @@
+<section class="list" >
+    <app-clientele-search [scenarioId]="scenarioId"></app-clientele-search>
+    <div>
+        <button (click)="export()" class="btn btn-primary animate">Export</button>
+    </div>
+    <div class="table-responsive" *ngIf="data">
+        <form novalidate #f="ngForm">
+            <table class="table table-striped" cellpadding="0" cellspacing="0">
+                <thead>
+                    <tr>
+                            <th></th>
+                    <th>
+                        <div class="form-group">
+                            <label>Customer code</label>
+                            <!--input class="form-control animate" type="text" placeholder="Search..." name="name" placeholder="Search by Customer code" ngModel
+                            (keyup)="filterResults(f, 'customerId'); "/>-->
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-group">
+                            <label>Name</label>
+                            <!--input class="form-control animate" type="text" name="name" placeholder="Search by Name" ngModel
+                            (keyup)="filterResults(f, 'customerName')"/>-->
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-group">
+                            <label class="allow-sort" (click)="sortResults(f, 'score');">CAS</label>
+                            <!--input class="form-control animate" type="text" placeholder="Search..." disabled>-->
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-group">
+                            <label>Balance</label>
+                            <!--input class="form-control animate" type="text" placeholder="Search..." disabled>-->
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-group">
+                            <label>Credit limit</label>
+                            <!--input class="form-control animate" type="text" placeholder="Search..." disabled>-->
+                        </div>
+                    </th>
+                    <th *ngIf="scenarioId != -1">
+                        <div class="form-group" >
+                            <label>Proposed limit</label>
+                            <!--input class="form-control animate" type="text" placeholder="Search..." disabled>-->
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-group">
+                            <label>Portfolio</label>
+                            <!--input class="form-control animate" type="text" placeholder="Search..." disabled>-->
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-group">
+                            <label>{{vatLabel}}</label>
+                            <!--input class="form-control animate" type="text" name="name" placeholder="Search by VAT Number" ngModel
+                            (keyup)="filterResults(f, 'vatNumber')"/>-->
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-group">
+                            <label>Status</label>
+                            <!--input class="form-control animate" type="text" placeholder="Search..." disabled>-->
+                        </div>
+                    </th>
+
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let customer of data | searchText: searchParams | paginate: { itemsPerPage: itemsPerPageLoad, currentPage: p, totalItems: customersCount } | sortEngine: sortParams"
+                    style="cursor: pointer;">
+                    <td ><img src="/assets/img/eye.png" (click)="showInfo(customer.customerId)" ></td>
+                        <td>{{customer.customerId}}</td>
+                        <td>{{customer.customerName}}</td>
+                        <td>{{customer.score}}</td>
+                        <td>{{customer.balance | number }}</td>
+                        <td>{{customer.creditLimit | number }}</td>
+                        <td *ngIf="scenarioId != -1">{{customer.proposedLimit | number }}</td>
+                        <td>{{customer.portfolio}}</td>
+                        <td>{{customer.vatNumber}}</td>
+                        <td>{{customer.customerStatus}}</td>
+                        <td>
+                            <button  (click)="exportCustomer(customer.customerId)" class="btn btn-icon animate">
+                                <span class="icon icon-download"></span>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="customersCount">
+                        <td colspan="9" style="text-align: center"><b>Showing {{data.length}} of Total customers: {{ customersCount | number}}</b></td>
+                    </tr>
+                </tbody>
+            </table>
+            <pagination-controls class="pagination justify-content-center align-items-center" previousLabel="<"  nextLabel=">" (pageChange)="p=$event; currentPage(p)"></pagination-controls>
+
+        </form>
+    </div>
+    <div *ngIf="!allow" class="loading">
+    
+    </div>
+</section>
+
+<div *ngIf="showClientInfo" [ngStyle]="{'display':display}" class="modal" role="dialog">
+        <app-clientele-info
+        [scenarioIdIn]="scenarioId"
+        [customerIdIn]="customerId">
+    </app-clientele-info>
+        <button type="button" class="btn btn-primary" (click)="closeInfo()">Close</button>
+</div>
+

@@ -1,0 +1,130 @@
+{
+  "clienteleDistributionList": [
+      {
+          "date": "30-04-2019",
+          "totalCustomers": 351,
+          "totalExposure": "429475543.87",
+          "clienteleDistributionItems": [
+              {
+                  "cas": "3",
+                  "customers": 0,
+                  "customersPercentage": "0",
+                  "exposure": "0",
+                  "exposurePercentage": "0"
+              },
+              {
+                  "cas": "4",
+                  "customers": 30,
+                  "customersPercentage": "8.55",
+                  "exposure": "119913788.6",
+                  "exposurePercentage": "27.92"
+              },
+              {
+                  "cas": "5",
+                  "customers": 45,
+                  "customersPercentage": "12.82",
+                  "exposure": "10927403.63",
+                  "exposurePercentage": "2.54"
+              },
+              {
+                  "cas": "6",
+                  "customers": 4,
+                  "customersPercentage": "1.14",
+                  "exposure": "20829534.04",
+                  "exposurePercentage": "4.85"
+              },
+              {
+                  "cas": "7",
+                  "customers": 230,
+                  "customersPercentage": "65.53",
+                  "exposure": "197851249.46",
+                  "exposurePercentage": "46.07"
+              },
+              {
+                  "cas": "8",
+                  "customers": 36,
+                  "customersPercentage": "10.26",
+                  "exposure": "78975531.47",
+                  "exposurePercentage": "18.39"
+              },
+              {
+                  "cas": "11",
+                  "customers": 5,
+                  "customersPercentage": "1.42",
+                  "exposure": "-14089.4",
+                  "exposurePercentage": "-0"
+              },
+              {
+                  "cas": "12",
+                  "customers": 1,
+                  "customersPercentage": "0.28",
+                  "exposure": "992126.07",
+                  "exposurePercentage": "0.23"
+              }
+          ]
+      },
+      {
+          "date": "30-04-2018",
+          "totalCustomers": 346,
+          "totalExposure": "388975629.76",
+          "clienteleDistributionItems": [
+              {
+                  "cas": "3",
+                  "customers": 0,
+                  "customersPercentage": "0",
+                  "exposure": "0",
+                  "exposurePercentage": "0"
+              },
+              {
+                  "cas": "4",
+                  "customers": 30,
+                  "customersPercentage": "8.67",
+                  "exposure": "121787381.61",
+                  "exposurePercentage": "31.31"
+              },
+              {
+                  "cas": "5",
+                  "customers": 39,
+                  "customersPercentage": "11.27",
+                  "exposure": "14157902.6",
+                  "exposurePercentage": "3.64"
+              },
+              {
+                  "cas": "6",
+                  "customers": 7,
+                  "customersPercentage": "2.02",
+                  "exposure": "18228086.75",
+                  "exposurePercentage": "4.69"
+              },
+              {
+                  "cas": "7",
+                  "customers": 228,
+                  "customersPercentage": "65.9",
+                  "exposure": "161948383.62",
+                  "exposurePercentage": "41.63"
+              },
+              {
+                  "cas": "8",
+                  "customers": 36,
+                  "customersPercentage": "10.4",
+                  "exposure": "69482456.54",
+                  "exposurePercentage": "17.86"
+              },
+              {
+                  "cas": "11",
+                  "customers": 5,
+                  "customersPercentage": "1.45",
+                  "exposure": "1797410.51",
+                  "exposurePercentage": "0.46"
+              },
+              {
+                  "cas": "12",
+                  "customers": 1,
+                  "customersPercentage": "0.29",
+                  "exposure": "1574008.13",
+                  "exposurePercentage": "0.4"
+              }
+          ]
+      }
+  ]
+}

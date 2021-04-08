@@ -1,0 +1,98 @@
+<button type="button" class="btn btn-primary" (click)="openModal()">Find Customer </button>
+<div *ngIf="!allow" class="loading">Loading</div>
+<div [ngStyle]="{'display':display}" class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Find Customer</h5>
+            <button type="button" class="close" (click)="onCloseHandled()" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <form (ngSubmit)="searchCustomer()" class="form-inline" #f="ngForm">
+            <div class="modal-body">
+                <div>Search By:
+
+                </div>
+                <div class="form-group" style="width: 100%; display: flex;">
+                    <!-- <fieldset class = "form-group" style="display: contents;" *ngFor="let criteria of searchCriteria">
+                        <div class="custom-control custom-radio" style="display: inline-block; width: 28%">
+                            <input
+                                type="radio"
+                                class="custom-control-input"
+                                name="searchBy"
+                                ngModel
+                                [value]="criteria.value"
+                                required
+                                >
+                                <label class="custom-control-label">{{criteria.displayName}}</label>
+                        </div>
+                    </fieldset> -->
+                   
+                    <div *ngFor="let criteria of searchCriteria">
+                        <input
+                                id="searchBy"
+                                name="radio-group"
+                                class="form-radio"
+                                type="radio"
+                                name="searchBy"
+                                ngModel
+                                [value]="criteria.value"
+                                required/>
+                        <label>
+                            {{ criteria.displayName }}
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group" style="width: 100%; display: flex;" >
+                    <input class="form-control animate search-box"
+                           type="text"
+                           name="searchKey"
+                           ngModel
+                           placeholder="Search by Name or ID"
+                           style="flex-wrap: wrap; width: 80%; margin-top:12px; margin-bottom:12px;"
+                           required
+                    />
+                    <div style="width:20%">
+                        <button
+                                class="btn btn-primary"
+                                type="submit"
+                                [disabled]="!f.valid"
+                                style="min-width:auto; width:80%; margin-left:10%; margin-right:10%;">
+                            Search
+                        </button>
+                    </div>
+                </div>
+                <table class="table table-striped" cellpadding="0" cellspacing="0">
+                    <thead>
+                    <tr>
+                        <th><label>Customer code</label></th>
+                        <th><label>Name</label></th>
+                        <th><label>Portfolio</label></th>
+                        <th><label>VAT number</label></th>
+                    </tr>
+                    </thead>
+                    <tbody *ngIf="customers">
+                        <tr style="cursor: pointer;" *ngFor="let customer of customers" (click)="showInfo(customer.customerId, customer.customerName )">
+                            <td>{{customer.customerId}}</td>
+                            <td>{{customer.customerName}}</td>
+                            <td>{{customer.portfolio}}</td>
+                            <td>{{customer.vatNumber}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div *ngIf="(!customers || !customers?.length) && submmited" class="customer-not-found" >
+                    Customer is not Found
+                </div>
+            </div>
+            <div class="modal-footer">
+                <!--button
+                    class="btn btn-primary"
+                    type="submit">OK</button>-->
+                <button type="button" class="btn btn-primary" (click)="onCloseHandled()">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div [ngStyle]="{'display':display}" class="modal" role="dialog" ></div>
+

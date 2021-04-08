@@ -1,0 +1,46 @@
+<section class="tabs">
+    <div class="tabs__nav">
+        <nav>
+        </nav>
+    </div>
+    <div class="tabs__content">
+        <div class="row">
+            <div class="col-4">
+                <app-parameters-table-portfolio [scenarioPortfolio]="scenarioPortfolio"></app-parameters-table-portfolio>
+            </div>
+
+            <div class="col-8">
+                <ul class="nav nav-buttons justify-content-end">
+                    <li class="nav-item">
+                        <button (click)="view = 'table'" class="btn btn-icon animate" [ngClass]="{'active': view == 'table'}">
+                            <span class="icon icon-table"></span>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button (click)="view = 'graph'" class="btn btn-icon animate" [ngClass]="{'active': view != 'table'}">
+                            <span class="icon icon-chart"></span>
+                        </button>
+                    </li>
+                </ul>
+                <div class="table-responsive">
+
+                    <app-scenario-table
+                            *ngIf="view === 'table'"
+                            [dataStats]="dataStats" >
+                    </app-scenario-table>
+
+                    <app-tab-graph
+                            [dataTabs]="dataTabs"
+                            [dataGraph]="dataGraph"
+                            [typeChart]="typeChart"
+                            *ngIf="view === 'graph'">
+                    </app-tab-graph>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+

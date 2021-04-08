@@ -1,0 +1,34 @@
+<section class="tabs">
+    <div class="tabs__nav">
+        <nav>
+        </nav>
+    </div>
+    <div class="tabs__content">
+        <div class="row">
+            <div class="col-4">
+                <app-parameters-table-prospect [scenarioProspect]="scenarioProspect">                    
+                </app-parameters-table-prospect>
+            </div>
+            <div class="col-8">
+                <ul class="nav nav-buttons justify-content-end">
+                    <li class="nav-item">
+                        <button (click)="view = 'table'" 
+                        class="btn btn-icon animate" 
+                        [ngClass]="{'active': view == 'table'}">
+                            <span class="icon icon-table"></span>
+                        </button>
+                    </li>
+                </ul>
+                <div class="table-responsive">
+                    <app-scenario-table
+                            *ngIf="view === 'table'"
+                            [dataStats]="dataStats" >
+                    </app-scenario-table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+

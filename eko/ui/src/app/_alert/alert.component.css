@@ -1,0 +1,22 @@
+.modal{
+    background: #1c1c1c;
+    opacity: 0.90
+}
+
+.modal-dialog{
+    z-index: 9999;
+    position: absolute;
+    left: 21vh;
+}
+
+.modal-body{
+    width: 100%;
+}
+
+.radio input{
+    margin-right: 15px;
+}
+
+.modal-content{
+    width: 575px;
+}

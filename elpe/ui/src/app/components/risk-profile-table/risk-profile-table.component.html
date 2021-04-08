@@ -1,0 +1,116 @@
+<!-- NEW  CREDITARK TABLE-->
+
+<table class="table table-striped" cellspacing="0" cellpadding="0" *ngIf="viewData === 'aging'">
+    <thead>
+        <tr>
+            <th>Aging averages</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <ng-container>
+            <tr *ngFor="let dataitem of averages; let i = index">
+               <td>{{ dataitem.key }}</td>
+               <th></th>
+               <td>{{ dataitem.value | number}}</td>
+               <th></th>
+               <th></th>
+           </tr> 
+       </ng-container>
+    </tbody>
+</table>
+
+<table class="table table-striped" cellspacing="0" cellpadding="0">
+    <thead>
+    <tr *ngIf="viewData === 'customers' || viewData === 'exposure'">
+        <th></th>
+        <th>{{ data[0].date }}</th>
+        <th></th>
+        <th>{{ data[1].date }}</th>
+        <th></th>
+    </tr>
+    <tr *ngIf="viewData === 'customers' || viewData === 'exposure'">
+        <th>CAS</th>
+        <th>{{columnName}}</th>
+        <th>%</th>
+        <th>{{columnName}}</th>
+        <th>%</th>
+    </tr>
+
+    <tr *ngIf="viewData === 'aging'">
+        <th>Bucket</th>
+        <th></th>
+        <th>Amount</th>
+        <th></th>
+        <th></th>
+    </tr>
+
+    </thead>
+    <tbody>
+    <ng-container *ngIf="viewData === 'customers'">
+
+        <tr *ngFor="let dataitem of data[0].clienteleDistributionItems; let i = index">
+            <td>{{ dataitem.cas }}</td>
+            <td>{{ dataitem.customers | number }}</td>
+            <td>{{ dataitem.customersPercentage }}</td>
+            <td>{{ data[1].clienteleDistributionItems[i].customers | number }}</td>
+            <td>{{ data[1].clienteleDistributionItems[i].customersPercentage }}</td>
+        </tr>
+    </ng-container>
+
+    <ng-container *ngIf="viewData === 'exposure'">
+
+        <tr *ngFor="let dataitem of data[0].clienteleDistributionItems; let i = index">
+            <td>{{ dataitem.cas }}</td>
+            <td>{{ dataitem.exposure | number}}</td>
+            <td>{{ dataitem.exposurePercentage }}</td>
+            <td>{{ data[1].clienteleDistributionItems[i].exposure | number }}</td>
+            <td>{{ data[1].clienteleDistributionItems[i].exposurePercentage }}</td>
+        </tr>
+    </ng-container>
+
+
+    <ng-container *ngIf="viewData === 'aging'">
+         <tr *ngFor="let dataitem of data; let i = index">
+            <td>{{ dataitem.key }}</td>
+            <th></th>
+            <td>{{ dataitem.value | number}}</td>
+            <th></th>
+            <th></th>
+        </tr> 
+    </ng-container>
+
+    
+
+
+    </tbody>
+    <tfoot>
+    <tr>
+        <th></th>
+        <th>
+            <ng-container *ngIf="viewData === 'customers'">
+                <div class="total"><span class="count">{{ data[0].totalCustomers | number}}</span> Total Customers</div>
+            </ng-container>
+
+            <ng-container *ngIf="viewData === 'exposure'">
+                <div class="total"><span class="count">{{ data[0].totalExposure | number}}</span> Total Exposure</div>
+            </ng-container>
+
+        </th>
+        <th></th>
+        <th>
+            <ng-container *ngIf="viewData === 'customers'">
+                <div class="total"><span class="count">{{ data[1].totalCustomers | number}}</span> Total Customers</div>
+            </ng-container>
+
+            <ng-container *ngIf="viewData === 'exposure'">
+                <div class="total"><span class="count">{{ data[1].totalExposure | number}}</span> Total Exposure</div>
+            </ng-container>
+        </th>
+        <th></th>
+    </tr>
+    </tfoot>
+</table>

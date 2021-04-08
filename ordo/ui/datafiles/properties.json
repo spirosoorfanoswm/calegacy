@@ -1,0 +1,41 @@
+{
+  "firstLevelMenuItems":[
+    {
+      "name": "Credit Monitor",
+      "link": "credit-monitor",
+      "icon": "icon-manager",
+      "secondLevelMenuItems": [
+        {
+          "name": "Risk Profile",
+          "link": "risk-profile"
+        },
+        {
+          "name": "Statistics",
+          "link": "statistics"
+        },
+        {
+          "name": "Clientele",
+          "link": "clientele"
+        }
+      ]
+    },
+    {
+      "name": "Credit Manager",
+      "link": "scenarios",
+      "icon": "icon-portfolio",
+      "secondLevelMenuItems": []
+    },
+    {
+      "name": "Analytics",
+      "link": "http://65.52.149.188:8091",
+      "icon": "icon-metrics",
+      "secondLevelMenuItems": []
+    },
+    {
+      "name": "Model Validation",
+      "link": "modelvalidation",
+      "icon": "icon-segmentation",
+      "secondLevelMenuItems": []
+    }
+  ]
+}

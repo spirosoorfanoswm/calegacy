@@ -1,0 +1,22 @@
+<section class="tabs">
+
+ 
+    <div *ngIf="data">
+        <div *ngFor="let rule of data">
+            
+            <font color="#f9ac19"><b> {{rule.portfolio}}</b></font>
+            <app-modelvalidation-table
+                [data]="rule.rules">
+            </app-modelvalidation-table>
+
+        </div>
+            
+    </div>
+
+
+
+</section>
+
+
+
+

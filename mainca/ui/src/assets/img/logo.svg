@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="39" viewBox="0 0 130 39">
+  <g id="Group_39" data-name="Group 39" transform="translate(-12 -7)">
+    <text id="CREDITARK" transform="translate(37 43)" fill="#fff" font-size="12" font-family="Helvetica" letter-spacing="0.35em"><tspan x="0" y="0">CREDIT</tspan><tspan y="0" font-family="Helvetica-Bold, Helvetica" font-weight="700">ARK</tspan></text>
+    <g id="Group_38" data-name="Group 38">
+      <circle id="Ellipse_20" data-name="Ellipse 20" cx="12.5" cy="12.5" r="12.5" transform="translate(12 7)" fill="#f4932d"/>
+      <g id="Union_2" data-name="Union 2" transform="translate(18 13)" fill="none">
+        <path d="M6.5,13A6.5,6.5,0,1,1,13,6.5V13Z" stroke="none"/>
+        <path d="M 11 11 L 11 6.499760150909424 C 11 4.018579959869385 8.981200218200684 2 6.499760150909424 2 C 4.018579959869385 2 2 4.018579959869385 2 6.499760150909424 C 2 8.981200218200684 4.018579959869385 11 6.499760150909424 11 L 11 11 M 13 13 L 6.499760150909424 13 C 2.910340070724487 13 -8.881784197001252e-16 10.08965969085693 -8.881784197001252e-16 6.499760150909424 C -8.881784197001252e-16 2.910340070724487 2.910340070724487 -8.881784197001252e-16 6.499760150909424 -8.881784197001252e-16 C 10.08965969085693 -8.881784197001252e-16 13 2.910340070724487 13 6.499760150909424 L 13 13 Z" stroke="none" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

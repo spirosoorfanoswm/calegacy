@@ -1,0 +1,27 @@
+<div *ngIf="!allow" class="loading">Loading</div>
+
+<section class="tabs" *ngIf="customerInfo">
+
+        <div class="tabs__nav">
+            <nav class="dropdown dropdown-tabs dropdown-md">
+                <button (click)="isOpenTab = !isOpenTab" class="btn btn-secondary btn-icon-right btn-lg btn-dropdown animate" [class.open]="isOpenTab">
+                    <span class="text">{{selectedTab}}</span>
+                    <span class="icon icon-arrow_down"></span>
+                </button>
+                <div class="dropdown-menu animate">
+                    <div *ngFor="let tab of tabsTitles">
+                        <button (click)="onClickTab($event)" class="dropdown-item animate" [class.active]="selectedTab === tab">{{tab}}</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="tabs__content">
+            <div class="row row-grid">
+                <div class="col col-12 col-md-6 col-xl-4" 
+                [ngClass]="( selectedTab === 'Provisions' ||  selectedTab === 'Analysis') ? 'col-xl-12' : ( selectedTab === 'Statistics') ? 'col-xl-6':'col-xl-4'" *ngFor="let card of cards">
+                    <app-clientele-card [card]="card"></app-clientele-card>
+                </div>
+            </div>
+        </div>
+        
+    </section>

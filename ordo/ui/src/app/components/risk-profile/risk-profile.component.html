@@ -1,0 +1,134 @@
+<!--
+  ---------------------------------------
+  ------------ TOTAL VIEW ---------------
+  ---------------------------------------
+-->
+<section *ngIf="!isSpecificPortfolioId" class="boxes">
+    <div class="row">
+        <div class="col col-12 col-md-6 col-xl-6" 
+        *ngFor="let dataitem of data; let i = index">
+            <article class="box">
+                <div class="box__content box__content--warning">
+                    <div class="row">
+                        <div class="col col-12">
+                            <div class="box__date">{{ dataitem.date }}</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-6" >
+                            <div class="box__label">Total Customers:</div>
+                            <div class="box__value">{{ dataitem.totalCustomers | number}}</div>
+                            <!--<div *ngIf="i == 0">
+                                    <div *ngFor="let stat of dataDistributionStatistics; let j = index">
+                                            <div  *ngIf="j != 0 && j%2==0" class="box__label">{{stat.description}}:</div>
+                                            <div  *ngIf="j != 0 && j%2==0" class="box__value">{{stat.last| number}}:</div>
+                                    </div>
+                            </div>   -->
+
+                           <!-- <div *ngIf="i == 1">
+                                    <div *ngFor="let stat of dataDistributionStatistics; let j = index">
+                                            <div  *ngIf="j != 0 && j%2==0" class="box__label">{{stat.description}}:</div>
+                                            <div  *ngIf="j != 0 && j%2==0" class="box__value">{{stat.prev| number}}:</div>
+                                    </div>
+                            </div>  -->
+                           
+                            
+                        </div>
+                        <div class="col col-6">
+                            <div class="box__label">Total Exposure:</div>
+                            <div class="box__value">{{ dataitem.totalExposure | number }}</div>
+                            <!--<div *ngIf="i == 0">
+                                    <div *ngFor="let stat of dataDistributionStatistics; let j = index">
+                                            <div  *ngIf="j != 0 && j%2==1" class="box__label">{{stat.description}}:</div>
+                                            <div  *ngIf="j != 0 && j%2==1" class="box__value">{{stat.last| number}}:</div>
+                                    </div>
+                            </div>  -->
+
+                            <!--<div *ngIf="i == 1">
+                                    <div *ngFor="let stat of dataDistributionStatistics; let j = index">
+                                            <div  *ngIf="j != 0 && j%2==1" class="box__label">{{stat.description}}:</div>
+                                            <div  *ngIf="j != 0 && j%2==1" class="box__value">{{stat.prev| number}}:</div>
+                                    </div>
+                            </div> --> 
+                            
+                         </div>
+                    </div>
+                </div>
+                
+            </article>
+        </div>
+    </div>
+
+
+</section>
+
+<!--
+  ---------------------------------------
+  -------- SPECIFIC PORTFOLIO ID --------
+  ---------------------------------------
+-->
+<section *ngIf="isSpecificPortfolioId" class="tabs">
+       
+    <div class="tabs__nav">
+
+        <nav class="dropdown dropdown-tabs dropdown-md">
+            <button (click)="(OpenTab) ? OpenTab = false : OpenTab = true" 
+            class="btn btn-secondary btn-icon-right btn-lg btn-dropdown animate" 
+            [ngClass]="{'open': OpenTab == true, '': OpenTab == false}">
+                <span class="text">{{ (clickName) ? clickName : 'Customers' }}</span>
+                <span class="icon icon-arrow_down"></span>
+            </button>
+            <div class="dropdown-menu animate">
+                <button (click)="changeViewData('customers'); clickName='Customers'" 
+                class="dropdown-item animate" [ngClass]="{'active': typeChange == 0}">Customers</button>
+                <button (click)="changeViewData('exposure'); clickName='Exposure'" 
+                class="dropdown-item animate" [ngClass]="{'active': typeChange == 1}">Exposure</button>
+                <button (click)="changeViewData('aging'); clickName='Aging'" 
+                class="dropdown-item animate" [ngClass]="{'active': typeChange == 2}">Aging</button>
+                <button (click)="changeViewData('agingDunning'); clickName='DunningAging'" 
+                class="dropdown-item animate" [ngClass]="{'active': typeChange == 3}">Dunning Aging</button>
+            </div>
+
+            
+        </nav>
+    </div>
+    <div class="tabs__content">
+        <ul class="nav nav-buttons justify-content-center justify-content-md-end">
+            <li class="nav-item">
+                <button (click)="view = 'table'" class="btn btn-icon animate"
+                 [ngClass]="{'active': view == 'table'}">
+                    <span class="icon icon-table"></span>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button (click)="view = 'graph'" class="btn btn-icon animate"
+                 [ngClass]="{'active': view != 'table'}">
+                    <span class="icon icon-chart"></span>
+                </button>
+            </li>
+
+            <li class="nav-item">
+                    <button (click)="export()" class="btn btn-icon-download animate">
+                        <span class="icon icon-download"></span>
+                    </button>
+            </li>
+        </ul>
+        <div class="table-responsive">
+            <app-risk-profile-table
+                    [data]="( typeChange===1 ) ? data : ( typeChange===0 ) ? data : 
+                    ( typeChange===2 ) ? dataAging : dataDunningAging"
+                    [averages]="averages"
+                    [selectedDate]="selectedDate"
+                    *ngIf="data && view === 'table'">
+            </app-risk-profile-table>
+            <app-risk-graph
+                [data]        = "( typeChange===1 ) ? graphData[1] : ( typeChange===0 ) ? 
+                graphData[0] : ( typeChange===2 ) ? graphData[2] : graphData[3]"
+                [selectedDate]= "selectedDate"
+                [typeChart]   = "typeChart"
+                *ngIf="graphData && view === 'graph'">
+            </app-risk-graph>
+
+        </div>
+    </div>
+</section>

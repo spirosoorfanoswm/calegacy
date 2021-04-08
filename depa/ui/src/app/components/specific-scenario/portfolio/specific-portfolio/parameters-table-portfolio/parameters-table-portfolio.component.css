@@ -1,0 +1,12 @@
+.ng-valid[required], .ng-valid.required  {
+    border-left: 6px solid green;
+}
+
+.ng-invalid:not(form)  {
+    border-left: 6px solid red;
+}
+
+.form-group .form-control:disabled {
+    opacity: 0.7 !important;
+    background: #fff;
+}

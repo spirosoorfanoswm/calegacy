@@ -1,0 +1,59 @@
+<!-- DYNAMIC MENU -->
+<aside class="animate-medium" [class.open]="isOpenMenu">
+    <figure class="logo">
+        <button (click)="isOpenMenu =! isOpenMenu" class="btn btn-icon d-flex d-xl-none">
+            <div id="nav-icon2">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <a href="#">
+            <img class="img-fluid" src="../assets/img/logo.svg" alt="creditark">
+        </a>
+    </figure>
+    <nav class="animate-medium">
+        <ul class="nav flex-column">
+            <li *ngFor="let firstLevelMenuItem of menuItems.firstLevelMenuItems" class="nav-item" [ngClass]="{ 'open': selectedParentItem == firstLevelMenuItem }">
+
+                <a *ngIf="firstLevelMenuItem.name != 'Analytics'" (click)="listParentClick($event, firstLevelMenuItem)" routerLink="/{{firstLevelMenuItem.link}}" (click)="changeTitle(firstLevelMenuItem.name)" class="nav-link animate " [ngClass]="{'active': selectedParentItem == firstLevelMenuItem}">
+                    <span class="icon animate {{ firstLevelMenuItem.icon }}"></span>
+                    {{ firstLevelMenuItem.name }}
+                    <button class="btn btn-icon animate">
+                        <span class="icon icon-toggle animate"></span>
+                    </button>
+                </a>
+
+                <!-- IF ANALYTICS GO TO NEW SITE -->
+                <a *ngIf="firstLevelMenuItem.name == 'Analytics'" target="_parent" href="{{ firstLevelMenuItem.link }}" class="nav-link animate " [ngClass]="{'active': selectedParentItem == firstLevelMenuItem}">
+                    <span class="animate icon {{ firstLevelMenuItem.icon }}"></span>
+                    {{ firstLevelMenuItem.name }}
+                </a>
+
+                <ul class="nav flex-column animate">
+                    <li *ngFor="let secondLevelMenuItem of firstLevelMenuItem.secondLevelMenuItems" class="nav-item"  [ngClass]="{'open': selectedChildItem == secondLevelMenuItem}">
+                        <a (click)="listChildClick($event, secondLevelMenuItem)" routerLink="/{{ secondLevelMenuItem.link }}"
+                           (click)="changeTitle(secondLevelMenuItem.name)" class="nav-link animate active" [ngClass]="{'active': selectedChildItem == secondLevelMenuItem}">
+                            {{ secondLevelMenuItem.name }}
+                            <button class="btn btn-icon animate">
+                                <span class="icon icon-toggle animate"></span>
+                            </button>
+                        </a>
+                        <ul class="nav flex-column animate">
+                            <li *ngFor="let portfolio of clientelePortfolios" class="nav-item">
+                                <a routerLink="/{{ secondLevelMenuItem.link }}/{{ portfolio.portfolioId }}"
+                                   (click)="changeTitle(secondLevelMenuItem.name + ' - ' + portfolio.description); listChildClickInner($event, portfolio)"
+                                   class="nav-link animate" [ngClass]="{'active': selectedChildItemInner == portfolio}">
+                                    {{ portfolio.description }}
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</aside>

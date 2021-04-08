@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="207" height="66" viewBox="0 0 207 66">
+  <g id="LOGO" transform="translate(-12 -7)">
+    <text id="CREDITARK" transform="translate(53 69)" fill="#fff" font-size="19" font-family="Helvetica" letter-spacing="0.35em"><tspan x="0" y="0">CREDIT</tspan><tspan y="0" font-family="Helvetica-Bold, Helvetica" font-weight="700">ARK</tspan></text>
+    <g id="Group_38" data-name="Group 38" transform="translate(12 7)">
+      <circle id="Ellipse_20" data-name="Ellipse 20" cx="20.5" cy="20.5" r="20.5"/>
+      <g id="Union_2" data-name="Union 2" transform="translate(10 10)" fill="none">
+        <path d="M10.5,21A10.5,10.5,0,1,1,21,10.5V21Z" stroke="none"/>
+        <path d="M 19 19 L 19 10.49960994720459 C 19 5.812910079956055 15.18673992156982 2 10.49960994720459 2 C 5.812910079956055 2 2 5.812910079956055 2 10.49960994720459 C 2 15.18673992156982 5.812910079956055 19 10.49960994720459 19 L 19 19 M 21 21 L 10.49960994720459 21 C 4.701320171356201 21 0 16.29867935180664 0 10.49960994720459 C 0 4.701320171356201 4.701320171356201 0 10.49960994720459 0 C 16.29867935180664 0 21 4.701320171356201 21 10.49960994720459 L 21 21 Z" stroke="none" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

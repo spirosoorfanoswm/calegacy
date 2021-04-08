@@ -1,0 +1,55 @@
+/* PAGINATION AS PER DESIGN */
+.pagination /deep/ .ng-star-inserted{
+    position: relative;
+    padding: 0.5rem .4rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.pagination /deep/ .ngx-pagination .current{
+    background: #f9ac19;
+    border-radius: 5px;
+    color: #fff !important;
+}
+
+.pagination /deep/ .ngx-pagination a:hover, .ngx-pagination button:hover {
+    background: 0 0;
+    box-shadow: none;
+    color: #f9ac19;
+    text-decoration: none;
+}
+
+.pagination /deep/ .ngx-pagination .pagination-next a::after, .pagination /deep/ .ngx-pagination .pagination-next.disabled::after{
+    display:none
+}
+
+.pagination /deep/ .ngx-pagination .pagination-previous a::before, .pagination /deep/ .ngx-pagination .pagination-previous.disabled::before{
+    display:none
+}
+
+.customersCount {
+    background-color: #fff !important;
+}
+
+.allow-sort{
+    cursor: pointer;
+}
+
+
+.modal{
+    background: #7e7e7e;
+    opacity: 1;
+}
+
+.modal-dialog{
+    z-index: 9999;
+    position: absolute;
+    left: 21vh;
+}
+
+.modal-body{
+    width: 100%;
+    height: 100%;
+}

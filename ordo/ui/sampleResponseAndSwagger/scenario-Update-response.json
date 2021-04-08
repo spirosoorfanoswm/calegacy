@@ -1,0 +1,4003 @@
+{
+  "scenarioId": 65,
+  "scenarioName": "New scenario 1222_gg2233",
+  "scenarioOwnerName": "Garos Ioannis",
+  "scenarioOwnerlogin": "jgaros",
+  "editable": false,
+  "statistics": {
+    "scenarioStatistics": [
+      {
+        "key": "Statistic",
+        "value": "Statistic",
+        "type": null,
+        "values": [
+          "Snapshot",
+          "Scenario"
+        ]
+      },
+      {
+        "key": "Number of customers",
+        "value": "Number of customers",
+        "type": null,
+        "values": [
+          "354",
+          "754"
+        ]
+      },
+      {
+        "key": "Turnover",
+        "value": "Turnover",
+        "type": null,
+        "values": [
+          "8487120816.56",
+          "15120045510.9"
+        ]
+      },
+      {
+        "key": "Limits",
+        "value": "Limits",
+        "type": null,
+        "values": [
+          "1030592933.84",
+          "0"
+        ]
+      },
+      {
+        "key": "Funding cost (as a percentage on turnover)",
+        "value": "Funding cost (as a percentage on turnover)",
+        "type": null,
+        "values": [
+          "",
+          "0%"
+        ]
+      },
+      {
+        "key": "Mean Profit Margin",
+        "value": "Mean Profit Margin",
+        "type": null,
+        "values": [
+          "",
+          "14.78%"
+        ]
+      },
+      {
+        "key": "Mean Risk Weighted Profit Margin",
+        "value": "Mean Risk Weighted Profit Margin",
+        "type": null,
+        "values": [
+          "",
+          "14.78%"
+        ]
+      },
+      {
+        "key": "Proposed provisions",
+        "value": "Proposed provisions",
+        "type": null,
+        "values": [
+          "",
+          "0"
+        ]
+      },
+      {
+        "key": "Proposed capital cushion",
+        "value": "Proposed capital cushion",
+        "type": null,
+        "values": [
+          "",
+          "0"
+        ]
+      }
+    ],
+    "limits": [
+      {
+        "description": "3",
+        "values": [
+          {
+            "key": "Current",
+            "value": "0",
+            "type": null
+          },
+          {
+            "key": "Proposed",
+            "value": "0",
+            "type": null
+          }
+        ]
+      },
+      {
+        "description": "4",
+        "values": [
+          {
+            "key": "Current",
+            "value": "528150000",
+            "type": null
+          },
+          {
+            "key": "Proposed",
+            "value": "0",
+            "type": null
+          }
+        ]
+      },
+      {
+        "description": "5",
+        "values": [
+          {
+            "key": "Current",
+            "value": "30101047.09",
+            "type": null
+          },
+          {
+            "key": "Proposed",
+            "value": "0",
+            "type": null
+          }
+        ]
+      },
+      {
+        "description": "6",
+        "values": [
+          {
+            "key": "Current",
+            "value": "19035002",
+            "type": null
+          },
+          {
+            "key": "Proposed",
+            "value": "0",
+            "type": null
+          }
+        ]
+      },
+      {
+        "description": "7",
+        "values": [
+          {
+            "key": "Current",
+            "value": "372202049.1",
+            "type": null
+          },
+          {
+            "key": "Proposed",
+            "value": "0",
+            "type": null
+          }
+        ]
+      },
+      {
+        "description": "8",
+        "values": [
+          {
+            "key": "Current",
+            "value": "79264425.33",
+            "type": null
+          },
+          {
+            "key": "Proposed",
+            "value": "0",
+            "type": null
+          }
+        ]
+      },
+      {
+        "description": "11",
+        "values": [
+          {
+            "key": "Current",
+            "value": "1800410.32",
+            "type": null
+          },
+          {
+            "key": "Proposed",
+            "value": "0",
+            "type": null
+          }
+        ]
+      },
+      {
+        "description": "12",
+        "values": [
+          {
+            "key": "Current",
+            "value": "0",
+            "type": null
+          },
+          {
+            "key": "Proposed",
+            "value": "0",
+            "type": null
+          }
+        ]
+      }
+    ],
+    "margings": [
+      {
+        "description": "3",
+        "values": [
+          {
+            "key": "Risk Weighted Margin",
+            "value": "0",
+            "type": null
+          },
+          {
+            "key": "Credit Risk Cost",
+            "value": "0",
+            "type": null
+          }
+        ]
+      },
+      {
+        "description": "4",
+        "values": [
+          {
+            "key": "Risk Weighted Margin",
+            "value": "17.28",
+            "type": null
+          },
+          {
+            "key": "Credit Risk Cost",
+            "value": "0",
+            "type": null
+          }
+        ]
+      },
+      {
+        "description": "5",
+        "values": [
+          {
+            "key": "Risk Weighted Margin",
+            "value": "17.03",
+            "type": null
+          },
+          {
+            "key": "Credit Risk Cost",
+            "value": "0",
+            "type": null
+          }
+        ]
+      },
+      {
+        "description": "6",
+        "values": [
+          {
+            "key": "Risk Weighted Margin",
+            "value": "20.13",
+            "type": null
+          },
+          {
+            "key": "Credit Risk Cost",
+            "value": "0",
+            "type": null
+          }
+        ]
+      },
+      {
+        "description": "7",
+        "values": [
+          {
+            "key": "Risk Weighted Margin",
+            "value": "11.62",
+            "type": null
+          },
+          {
+            "key": "Credit Risk Cost",
+            "value": "0",
+            "type": null
+          }
+        ]
+      },
+      {
+        "description": "8",
+        "values": [
+          {
+            "key": "Risk Weighted Margin",
+            "value": "21.33",
+            "type": null
+          },
+          {
+            "key": "Credit Risk Cost",
+            "value": "0",
+            "type": null
+          }
+        ]
+      },
+      {
+        "description": "11",
+        "values": [
+          {
+            "key": "Risk Weighted Margin",
+            "value": "18.99",
+            "type": null
+          },
+          {
+            "key": "Credit Risk Cost",
+            "value": "0",
+            "type": null
+          }
+        ]
+      },
+      {
+        "description": "12",
+        "values": [
+          {
+            "key": "Risk Weighted Margin",
+            "value": "0",
+            "type": null
+          },
+          {
+            "key": "Credit Risk Cost",
+            "value": "0",
+            "type": null
+          }
+        ]
+      }
+    ],
+    "allowances": [
+      {
+        "description": "3",
+        "values": [
+          {
+            "key": "Provisions",
+            "value": "0",
+            "type": null
+          },
+          {
+            "key": "Cushion",
+            "value": "0",
+            "type": null
+          }
+        ]
+      },
+      {
+        "description": "4",
+        "values": [
+          {
+            "key": "Provisions",
+            "value": "0",
+            "type": null
+          },
+          {
+            "key": "Cushion",
+            "value": "0",
+            "type": null
+          }
+        ]
+      },
+      {
+        "description": "5",
+        "values": [
+          {
+            "key": "Provisions",
+            "value": "0",
+            "type": null
+          },
+          {
+            "key": "Cushion",
+            "value": "0",
+            "type": null
+          }
+        ]
+      },
+      {
+        "description": "6",
+        "values": [
+          {
+            "key": "Provisions",
+            "value": "0",
+            "type": null
+          },
+          {
+            "key": "Cushion",
+            "value": "0",
+            "type": null
+          }
+        ]
+      },
+      {
+        "description": "7",
+        "values": [
+          {
+            "key": "Provisions",
+            "value": "0",
+            "type": null
+          },
+          {
+            "key": "Cushion",
+            "value": "0",
+            "type": null
+          }
+        ]
+      },
+      {
+        "description": "8",
+        "values": [
+          {
+            "key": "Provisions",
+            "value": "0",
+            "type": null
+          },
+          {
+            "key": "Cushion",
+            "value": "0",
+            "type": null
+          }
+        ]
+      },
+      {
+        "description": "11",
+        "values": [
+          {
+            "key": "Provisions",
+            "value": "0",
+            "type": null
+          },
+          {
+            "key": "Cushion",
+            "value": "0",
+            "type": null
+          }
+        ]
+      },
+      {
+        "description": "12",
+        "values": [
+          {
+            "key": "Provisions",
+            "value": "0",
+            "type": null
+          },
+          {
+            "key": "Cushion",
+            "value": "0",
+            "type": null
+          }
+        ]
+      }
+    ]
+  },
+  "parameters": {
+    "maxLimitGrowth": "59%",
+    "maxLimitReduction": "44%",
+    "minLimitGrowth": "15%",
+    "minLimitReduction": "3%",
+    "minAcceptedLimitUse": "83%",
+    "maxDso": "180",
+    "minAcceptedRwMargin": "14%",
+    "salesChange": "80%",
+    "marginChange": "81%",
+    "pdChange": "82%",
+    "worstAcceptableScore": "5",
+    "userComments": null,
+    "wacc": "8%",
+    "raroc": "13%",
+    "creditAmount": "429000000",
+    "significantDigits": "3",
+    "minLimit": "5000",
+    "minLimitPct": "5%"
+  },
+  "portfolios": [
+    {
+      "portfolioId": "21",
+      "portfolioName": "ΧΗΜΙΚΑ - ΙΔΙΩΤΙΚΕΣ ΕΤΑΙΡΕΙΕΣ",
+      "parameters": {
+        "maxLimitGrowth": "10%",
+        "maxLimitReduction": "5%",
+        "minLimitGrowth": "5%",
+        "minLimitReduction": "5%",
+        "minAcceptedLimitUse": "30%",
+        "maxDso": "180",
+        "minAcceptedRwMargin": "7.5%",
+        "salesChange": "67%",
+        "marginChange": "90%",
+        "pdChange": "30%",
+        "worstAcceptableScore": null,
+        "userComments": null,
+        "maxLimitGrowthCli": "59%",
+        "maxLimitReductionCli": "3%",
+        "minLimitGrowthCli": "3%",
+        "minLimitReductionCli": "3%",
+        "minAcceptedLimitUseCli": "83%",
+        "maxDsoCli": "180",
+        "minAcceptedRwMarginCli": "14%",
+        "salesChangeCli": "80%",
+        "marginChangeCli": "81%",
+        "pdChangeCli": "82%",
+        "worstAcceptableScoreCli": "5",
+        "userCommentsCli": null
+      },
+      "statistics": {
+        "portfolioStatistics": [
+          {
+            "key": "Statistic",
+            "value": "Statistic",
+            "type": null,
+            "values": [
+              "Snapshot",
+              "Scenario"
+            ]
+          },
+          {
+            "key": "Number of customers",
+            "value": "Number of customers",
+            "type": null,
+            "values": [
+              "111",
+              "0"
+            ]
+          },
+          {
+            "key": "Turnover",
+            "value": "Turnover",
+            "type": null,
+            "values": [
+              "106033113.7",
+              "177075299.88"
+            ]
+          },
+          {
+            "key": "Limits",
+            "value": "Limits",
+            "type": null,
+            "values": [
+              "40844056.09",
+              "0"
+            ]
+          },
+          {
+            "key": "Funding cost (as a percentage on turnover)",
+            "value": "Funding cost (as a percentage on turnover)",
+            "type": null,
+            "values": [
+              "",
+              "0%"
+            ]
+          },
+          {
+            "key": "Mean Profit Margin",
+            "value": "Mean Profit Margin",
+            "type": null,
+            "values": [
+              "",
+              "44.38%"
+            ]
+          },
+          {
+            "key": "Mean Risk Weighted Profit Margin",
+            "value": "Mean Risk Weighted Profit Margin",
+            "type": null,
+            "values": [
+              "",
+              "44.38%"
+            ]
+          },
+          {
+            "key": "Proposed provisions",
+            "value": "Proposed provisions",
+            "type": null,
+            "values": [
+              "",
+              "0"
+            ]
+          },
+          {
+            "key": "Proposed capital cushion",
+            "value": "Proposed capital cushion",
+            "type": null,
+            "values": [
+              "",
+              "0"
+            ]
+          }
+        ],
+        "limits": [
+          {
+            "description": "3",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "4",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "5",
+            "values": [
+              {
+                "key": "Current",
+                "value": "10278045.09",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "6",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "7",
+            "values": [
+              {
+                "key": "Current",
+                "value": "30441009",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "8",
+            "values": [
+              {
+                "key": "Current",
+                "value": "125002",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "11",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "12",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          }
+        ],
+        "margings": [
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "18.84",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "50.91",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "30.32",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          }
+        ],
+        "allowances": [
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "portfolioId": "22",
+      "portfolioName": "ΧΗΜΙΚΑ - ΕΞΑΓΩΓΕΣ",
+      "parameters": {
+        "maxLimitGrowth": null,
+        "maxLimitReduction": null,
+        "minLimitGrowth": null,
+        "minLimitReduction": null,
+        "minAcceptedLimitUse": null,
+        "maxDso": null,
+        "minAcceptedRwMargin": null,
+        "salesChange": null,
+        "marginChange": null,
+        "pdChange": null,
+        "worstAcceptableScore": null,
+        "userComments": null,
+        "maxLimitGrowthCli": "59%",
+        "maxLimitReductionCli": "3%",
+        "minLimitGrowthCli": "3%",
+        "minLimitReductionCli": "3%",
+        "minAcceptedLimitUseCli": "83%",
+        "maxDsoCli": "180",
+        "minAcceptedRwMarginCli": "14%",
+        "salesChangeCli": "80%",
+        "marginChangeCli": "81%",
+        "pdChangeCli": "82%",
+        "worstAcceptableScoreCli": "5",
+        "userCommentsCli": null
+      },
+      "statistics": {
+        "portfolioStatistics": [
+          {
+            "key": "Statistic",
+            "value": "Statistic",
+            "type": null,
+            "values": [
+              "Snapshot",
+              "Scenario"
+            ]
+          },
+          {
+            "key": "Number of customers",
+            "value": "Number of customers",
+            "type": null,
+            "values": [
+              "84",
+              "0"
+            ]
+          },
+          {
+            "key": "Turnover",
+            "value": "Turnover",
+            "type": null,
+            "values": [
+              "153204577.94",
+              "275768240.29"
+            ]
+          },
+          {
+            "key": "Limits",
+            "value": "Limits",
+            "type": null,
+            "values": [
+              "26800005",
+              "0"
+            ]
+          },
+          {
+            "key": "Funding cost (as a percentage on turnover)",
+            "value": "Funding cost (as a percentage on turnover)",
+            "type": null,
+            "values": [
+              "",
+              "0%"
+            ]
+          },
+          {
+            "key": "Mean Profit Margin",
+            "value": "Mean Profit Margin",
+            "type": null,
+            "values": [
+              "",
+              "67.26%"
+            ]
+          },
+          {
+            "key": "Mean Risk Weighted Profit Margin",
+            "value": "Mean Risk Weighted Profit Margin",
+            "type": null,
+            "values": [
+              "",
+              "67.26%"
+            ]
+          },
+          {
+            "key": "Proposed provisions",
+            "value": "Proposed provisions",
+            "type": null,
+            "values": [
+              "",
+              "0"
+            ]
+          },
+          {
+            "key": "Proposed capital cushion",
+            "value": "Proposed capital cushion",
+            "type": null,
+            "values": [
+              "",
+              "0"
+            ]
+          }
+        ],
+        "limits": [
+          {
+            "description": "3",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "4",
+            "values": [
+              {
+                "key": "Current",
+                "value": "8950000",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "5",
+            "values": [
+              {
+                "key": "Current",
+                "value": "200000",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "6",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "7",
+            "values": [
+              {
+                "key": "Current",
+                "value": "17650005",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "8",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "11",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "12",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          }
+        ],
+        "margings": [
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "79",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "67.52",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "87.89",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "57.1",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          }
+        ],
+        "allowances": [
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "portfolioId": "24",
+      "portfolioName": "ΧΗΜΙΚΑ - ΕΝΔΟΕΤΑΙΡΙΚΑ",
+      "parameters": {
+        "maxLimitGrowth": null,
+        "maxLimitReduction": null,
+        "minLimitGrowth": null,
+        "minLimitReduction": null,
+        "minAcceptedLimitUse": null,
+        "maxDso": null,
+        "minAcceptedRwMargin": null,
+        "salesChange": null,
+        "marginChange": null,
+        "pdChange": null,
+        "worstAcceptableScore": null,
+        "userComments": null,
+        "maxLimitGrowthCli": "59%",
+        "maxLimitReductionCli": "3%",
+        "minLimitGrowthCli": "3%",
+        "minLimitReductionCli": "3%",
+        "minAcceptedLimitUseCli": "83%",
+        "maxDsoCli": "180",
+        "minAcceptedRwMarginCli": "14%",
+        "salesChangeCli": "80%",
+        "marginChangeCli": "81%",
+        "pdChangeCli": "82%",
+        "worstAcceptableScoreCli": "5",
+        "userCommentsCli": null
+      },
+      "statistics": {
+        "portfolioStatistics": [
+          {
+            "key": "Statistic",
+            "value": "Statistic",
+            "type": null,
+            "values": [
+              "Snapshot",
+              "Scenario"
+            ]
+          },
+          {
+            "key": "Number of customers",
+            "value": "Number of customers",
+            "type": null,
+            "values": [
+              "1",
+              "0"
+            ]
+          },
+          {
+            "key": "Turnover",
+            "value": "Turnover",
+            "type": null,
+            "values": [
+              "4613447.98",
+              "8304206.36"
+            ]
+          },
+          {
+            "key": "Limits",
+            "value": "Limits",
+            "type": null,
+            "values": [
+              "500000",
+              "0"
+            ]
+          },
+          {
+            "key": "Funding cost (as a percentage on turnover)",
+            "value": "Funding cost (as a percentage on turnover)",
+            "type": null,
+            "values": [
+              "",
+              "0%"
+            ]
+          },
+          {
+            "key": "Mean Profit Margin",
+            "value": "Mean Profit Margin",
+            "type": null,
+            "values": [
+              "",
+              "30.61%"
+            ]
+          },
+          {
+            "key": "Mean Risk Weighted Profit Margin",
+            "value": "Mean Risk Weighted Profit Margin",
+            "type": null,
+            "values": [
+              "",
+              "30.61%"
+            ]
+          },
+          {
+            "key": "Proposed provisions",
+            "value": "Proposed provisions",
+            "type": null,
+            "values": [
+              "",
+              "0"
+            ]
+          },
+          {
+            "key": "Proposed capital cushion",
+            "value": "Proposed capital cushion",
+            "type": null,
+            "values": [
+              "",
+              "0"
+            ]
+          }
+        ],
+        "limits": [
+          {
+            "description": "3",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "4",
+            "values": [
+              {
+                "key": "Current",
+                "value": "500000",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "5",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "6",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "7",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "8",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "11",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "12",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          }
+        ],
+        "margings": [
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "30.61",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          }
+        ],
+        "allowances": [
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "portfolioId": "11",
+      "portfolioName": "ΠΕΤΡΕΛΑΙΟΕΙΔΗ - ΙΔΙΩΤΙΚΕΣ ΕΤΑΙΡΕΙΕΣ",
+      "parameters": {
+        "maxLimitGrowth": null,
+        "maxLimitReduction": null,
+        "minLimitGrowth": null,
+        "minLimitReduction": null,
+        "minAcceptedLimitUse": null,
+        "maxDso": null,
+        "minAcceptedRwMargin": null,
+        "salesChange": null,
+        "marginChange": null,
+        "pdChange": null,
+        "worstAcceptableScore": null,
+        "userComments": null,
+        "maxLimitGrowthCli": "59%",
+        "maxLimitReductionCli": "3%",
+        "minLimitGrowthCli": "3%",
+        "minLimitReductionCli": "3%",
+        "minAcceptedLimitUseCli": "83%",
+        "maxDsoCli": "180",
+        "minAcceptedRwMarginCli": "14%",
+        "salesChangeCli": "80%",
+        "marginChangeCli": "81%",
+        "pdChangeCli": "82%",
+        "worstAcceptableScoreCli": "5",
+        "userCommentsCli": null
+      },
+      "statistics": {
+        "portfolioStatistics": [
+          {
+            "key": "Statistic",
+            "value": "Statistic",
+            "type": null,
+            "values": [
+              "Snapshot",
+              "Scenario"
+            ]
+          },
+          {
+            "key": "Number of customers",
+            "value": "Number of customers",
+            "type": null,
+            "values": [
+              "75",
+              "0"
+            ]
+          },
+          {
+            "key": "Turnover",
+            "value": "Turnover",
+            "type": null,
+            "values": [
+              "2295015678.22",
+              "3988039707.89"
+            ]
+          },
+          {
+            "key": "Limits",
+            "value": "Limits",
+            "type": null,
+            "values": [
+              "220517835.75",
+              "0"
+            ]
+          },
+          {
+            "key": "Funding cost (as a percentage on turnover)",
+            "value": "Funding cost (as a percentage on turnover)",
+            "type": null,
+            "values": [
+              "",
+              "0%"
+            ]
+          },
+          {
+            "key": "Mean Profit Margin",
+            "value": "Mean Profit Margin",
+            "type": null,
+            "values": [
+              "",
+              "14.86%"
+            ]
+          },
+          {
+            "key": "Mean Risk Weighted Profit Margin",
+            "value": "Mean Risk Weighted Profit Margin",
+            "type": null,
+            "values": [
+              "",
+              "14.86%"
+            ]
+          },
+          {
+            "key": "Proposed provisions",
+            "value": "Proposed provisions",
+            "type": null,
+            "values": [
+              "",
+              "0"
+            ]
+          },
+          {
+            "key": "Proposed capital cushion",
+            "value": "Proposed capital cushion",
+            "type": null,
+            "values": [
+              "",
+              "0"
+            ]
+          }
+        ],
+        "limits": [
+          {
+            "description": "3",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "4",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "5",
+            "values": [
+              {
+                "key": "Current",
+                "value": "19623001",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "6",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "7",
+            "values": [
+              {
+                "key": "Current",
+                "value": "119955001.1",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "8",
+            "values": [
+              {
+                "key": "Current",
+                "value": "79139423.33",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "11",
+            "values": [
+              {
+                "key": "Current",
+                "value": "1800410.32",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "12",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          }
+        ],
+        "margings": [
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "15",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "12.3",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "21.32",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "18.99",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          }
+        ],
+        "allowances": [
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "portfolioId": "12",
+      "portfolioName": "ΠΕΤΡΕΛΑΙΟΕΙΔΗ - ΕΞΑΓΩΓΕΣ",
+      "parameters": {
+        "maxLimitGrowth": null,
+        "maxLimitReduction": null,
+        "minLimitGrowth": null,
+        "minLimitReduction": null,
+        "minAcceptedLimitUse": null,
+        "maxDso": null,
+        "minAcceptedRwMargin": null,
+        "salesChange": null,
+        "marginChange": null,
+        "pdChange": null,
+        "worstAcceptableScore": null,
+        "userComments": null,
+        "maxLimitGrowthCli": "59%",
+        "maxLimitReductionCli": "3%",
+        "minLimitGrowthCli": "3%",
+        "minLimitReductionCli": "3%",
+        "minAcceptedLimitUseCli": "83%",
+        "maxDsoCli": "180",
+        "minAcceptedRwMarginCli": "14%",
+        "salesChangeCli": "80%",
+        "marginChangeCli": "81%",
+        "pdChangeCli": "82%",
+        "worstAcceptableScoreCli": "5",
+        "userCommentsCli": null
+      },
+      "statistics": {
+        "portfolioStatistics": [
+          {
+            "key": "Statistic",
+            "value": "Statistic",
+            "type": null,
+            "values": [
+              "Snapshot",
+              "Scenario"
+            ]
+          },
+          {
+            "key": "Number of customers",
+            "value": "Number of customers",
+            "type": null,
+            "values": [
+              "58",
+              "0"
+            ]
+          },
+          {
+            "key": "Turnover",
+            "value": "Turnover",
+            "type": null,
+            "values": [
+              "2563409607.67",
+              "4614137293.81"
+            ]
+          },
+          {
+            "key": "Limits",
+            "value": "Limits",
+            "type": null,
+            "values": [
+              "185191037",
+              "0"
+            ]
+          },
+          {
+            "key": "Funding cost (as a percentage on turnover)",
+            "value": "Funding cost (as a percentage on turnover)",
+            "type": null,
+            "values": [
+              "",
+              "0%"
+            ]
+          },
+          {
+            "key": "Mean Profit Margin",
+            "value": "Mean Profit Margin",
+            "type": null,
+            "values": [
+              "",
+              "6.83%"
+            ]
+          },
+          {
+            "key": "Mean Risk Weighted Profit Margin",
+            "value": "Mean Risk Weighted Profit Margin",
+            "type": null,
+            "values": [
+              "",
+              "6.83%"
+            ]
+          },
+          {
+            "key": "Proposed provisions",
+            "value": "Proposed provisions",
+            "type": null,
+            "values": [
+              "",
+              "0"
+            ]
+          },
+          {
+            "key": "Proposed capital cushion",
+            "value": "Proposed capital cushion",
+            "type": null,
+            "values": [
+              "",
+              "0"
+            ]
+          }
+        ],
+        "limits": [
+          {
+            "description": "3",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "4",
+            "values": [
+              {
+                "key": "Current",
+                "value": "2000000",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "5",
+            "values": [
+              {
+                "key": "Current",
+                "value": "1",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "6",
+            "values": [
+              {
+                "key": "Current",
+                "value": "19035002",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "7",
+            "values": [
+              {
+                "key": "Current",
+                "value": "164156034",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "8",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "11",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "12",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          }
+        ],
+        "margings": [
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "14.2",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "4.66",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "6.95",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          }
+        ],
+        "allowances": [
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "portfolioId": "13",
+      "portfolioName": "ΠΕΤΡΕΛΑΙΟΕΙΔΗ - ΔΗΜΟΣΙΟ, ΣΤΡΑΤΟΣ",
+      "parameters": {
+        "maxLimitGrowth": null,
+        "maxLimitReduction": null,
+        "minLimitGrowth": null,
+        "minLimitReduction": null,
+        "minAcceptedLimitUse": null,
+        "maxDso": null,
+        "minAcceptedRwMargin": null,
+        "salesChange": null,
+        "marginChange": null,
+        "pdChange": null,
+        "worstAcceptableScore": null,
+        "userComments": null,
+        "maxLimitGrowthCli": "59%",
+        "maxLimitReductionCli": "3%",
+        "minLimitGrowthCli": "3%",
+        "minLimitReductionCli": "3%",
+        "minAcceptedLimitUseCli": "83%",
+        "maxDsoCli": "180",
+        "minAcceptedRwMarginCli": "14%",
+        "salesChangeCli": "80%",
+        "marginChangeCli": "81%",
+        "pdChangeCli": "82%",
+        "worstAcceptableScoreCli": "5",
+        "userCommentsCli": null
+      },
+      "statistics": {
+        "portfolioStatistics": [
+          {
+            "key": "Statistic",
+            "value": "Statistic",
+            "type": null,
+            "values": [
+              "Snapshot",
+              "Scenario"
+            ]
+          },
+          {
+            "key": "Number of customers",
+            "value": "Number of customers",
+            "type": null,
+            "values": [
+              "3",
+              "0"
+            ]
+          },
+          {
+            "key": "Turnover",
+            "value": "Turnover",
+            "type": null,
+            "values": [
+              "123896152.54",
+              "223013074.57"
+            ]
+          },
+          {
+            "key": "Limits",
+            "value": "Limits",
+            "type": null,
+            "values": [
+              "40000000",
+              "0"
+            ]
+          },
+          {
+            "key": "Funding cost (as a percentage on turnover)",
+            "value": "Funding cost (as a percentage on turnover)",
+            "type": null,
+            "values": [
+              "",
+              "0%"
+            ]
+          },
+          {
+            "key": "Mean Profit Margin",
+            "value": "Mean Profit Margin",
+            "type": null,
+            "values": [
+              "",
+              "34.59%"
+            ]
+          },
+          {
+            "key": "Mean Risk Weighted Profit Margin",
+            "value": "Mean Risk Weighted Profit Margin",
+            "type": null,
+            "values": [
+              "",
+              "34.59%"
+            ]
+          },
+          {
+            "key": "Proposed provisions",
+            "value": "Proposed provisions",
+            "type": null,
+            "values": [
+              "",
+              "0"
+            ]
+          },
+          {
+            "key": "Proposed capital cushion",
+            "value": "Proposed capital cushion",
+            "type": null,
+            "values": [
+              "",
+              "0"
+            ]
+          }
+        ],
+        "limits": [
+          {
+            "description": "3",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "4",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "5",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "6",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "7",
+            "values": [
+              {
+                "key": "Current",
+                "value": "40000000",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "8",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "11",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "12",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          }
+        ],
+        "margings": [
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "34.59",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          }
+        ],
+        "allowances": [
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "portfolioId": "14",
+      "portfolioName": "ΠΕΤΡΕΛΑΙΟΕΙΔΗ - ΕΝΔΟΕΤΑΙΡΙΚΑ",
+      "parameters": {
+        "maxLimitGrowth": null,
+        "maxLimitReduction": null,
+        "minLimitGrowth": null,
+        "minLimitReduction": null,
+        "minAcceptedLimitUse": null,
+        "maxDso": null,
+        "minAcceptedRwMargin": null,
+        "salesChange": null,
+        "marginChange": null,
+        "pdChange": null,
+        "worstAcceptableScore": null,
+        "userComments": null,
+        "maxLimitGrowthCli": "59%",
+        "maxLimitReductionCli": "3%",
+        "minLimitGrowthCli": "3%",
+        "minLimitReductionCli": "3%",
+        "minAcceptedLimitUseCli": "83%",
+        "maxDsoCli": "180",
+        "minAcceptedRwMarginCli": "14%",
+        "salesChangeCli": "80%",
+        "marginChangeCli": "81%",
+        "pdChangeCli": "82%",
+        "worstAcceptableScoreCli": "5",
+        "userCommentsCli": null
+      },
+      "statistics": {
+        "portfolioStatistics": [
+          {
+            "key": "Statistic",
+            "value": "Statistic",
+            "type": null,
+            "values": [
+              "Snapshot",
+              "Scenario"
+            ]
+          },
+          {
+            "key": "Number of customers",
+            "value": "Number of customers",
+            "type": null,
+            "values": [
+              "19",
+              "0"
+            ]
+          },
+          {
+            "key": "Turnover",
+            "value": "Turnover",
+            "type": null,
+            "values": [
+              "3240711515.91",
+              "5833280728.64"
+            ]
+          },
+          {
+            "key": "Limits",
+            "value": "Limits",
+            "type": null,
+            "values": [
+              "516700000",
+              "0"
+            ]
+          },
+          {
+            "key": "Funding cost (as a percentage on turnover)",
+            "value": "Funding cost (as a percentage on turnover)",
+            "type": null,
+            "values": [
+              "",
+              "0%"
+            ]
+          },
+          {
+            "key": "Mean Profit Margin",
+            "value": "Mean Profit Margin",
+            "type": null,
+            "values": [
+              "",
+              "16.85%"
+            ]
+          },
+          {
+            "key": "Mean Risk Weighted Profit Margin",
+            "value": "Mean Risk Weighted Profit Margin",
+            "type": null,
+            "values": [
+              "",
+              "16.85%"
+            ]
+          },
+          {
+            "key": "Proposed provisions",
+            "value": "Proposed provisions",
+            "type": null,
+            "values": [
+              "",
+              "0"
+            ]
+          },
+          {
+            "key": "Proposed capital cushion",
+            "value": "Proposed capital cushion",
+            "type": null,
+            "values": [
+              "",
+              "0"
+            ]
+          }
+        ],
+        "limits": [
+          {
+            "description": "3",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "4",
+            "values": [
+              {
+                "key": "Current",
+                "value": "516700000",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "5",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "6",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "7",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "8",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "11",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": "12",
+            "values": [
+              {
+                "key": "Current",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Proposed",
+                "value": "0",
+                "type": null
+              }
+            ]
+          }
+        ],
+        "margings": [
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "16.85",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Risk Weighted Margin",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Credit Risk Cost",
+                "value": "0",
+                "type": null
+              }
+            ]
+          }
+        ],
+        "allowances": [
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          },
+          {
+            "description": null,
+            "values": [
+              {
+                "key": "Provisions",
+                "value": "0",
+                "type": null
+              },
+              {
+                "key": "Cushion",
+                "value": "0",
+                "type": null
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "prospects": [
+    {
+      "parameters": {
+        "prospectId": "1",
+        "description": "New prospect 1333_11",
+        "customersNum": "400",
+        "purchases": "15",
+        "maxDso": "180",
+        "gradeInx": "2",
+        "grade": "Medium",
+        "profitMargin": "60%",
+        "mitigants": [
+          "ΓΡΑΜΜΑΤΕΙΑ ΕΙΣΠΡΑΚΤΕΑ",
+          "ΑΞΙΑ ΥΠΟΘΗΚΩΝ & ΠΡΟΣΗΜΕΙΩΣΕΩΝ ΠΕΛΑΤΩΝ",
+          "ΕΝΕΓΓΥΕΣ ΠΙΣΤΩΣΕΙΣ LCs/ CAD",
+          "ΕΠΙΤΑΓΕΣ ΕΓΓΥΗΣΕΩΣ ΑΟΡΙΣΤΟΥ ΧΡΟΝΟΥ",
+          "ΕΤΑΙΡΙΚΕΣ ΕΓΓΥΗΤΙΚΕΣ ΕΞΑΣΦΑΛΙΣΗΣ ΑΠΑΙΤΗΣΕΩΝ",
+          "ΜΕΤΑΧΡΟΝΟΛΟΓΗΜΕΝΕΣ ΕΠΙΤΑΓΕΣ ΙΔΙΟΥ",
+          "ΜΕΤΑΧΡΟΝΟΛΟΓΗΜΕΝΕΣ ΕΠΙΤΑΓΕΣ ΤΡΙΤΩΝ",
+          "ΠΡΟΚΑΤΑΒΟΛΗ ΠΕΛΑΤΗ ΜΕΤΡΗΤΑ",
+          "ΤΡΑΠΕΖΙΚΕΣ ΕΓΓΥΗΤΙΚΕΣ ΕΠΙΣΤΟΛΕΣ ΠΕΛΑΤΩΝ",
+          "FACTORING ΠΕΛΑΤΩΝ",
+          "FACTORING ΧΩΡΙΣ ΑΝΑΓΩΓΗ"
+        ],
+        "mitigantsValues": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "2200",
+          "0",
+          "0"
+        ],
+        "minAcceptedRwMargin": "7.5%",
+        "comments": null
+      },
+      "statistics": {
+        "prospectStatistics": [
+          {
+            "key": "Description",
+            "value": "Description",
+            "type": null,
+            "values": [
+              "Value"
+            ]
+          },
+          {
+            "key": "Projected turnover",
+            "value": "Projected turnover",
+            "type": null,
+            "values": [
+              "15"
+            ]
+          },
+          {
+            "key": "Maximum acceptable limit",
+            "value": "Maximum acceptable limit",
+            "type": null,
+            "values": [
+              "0"
+            ]
+          },
+          {
+            "key": "Proposed limit",
+            "value": "Proposed limit",
+            "type": null,
+            "values": [
+              "0"
+            ]
+          },
+          {
+            "key": "Effective Days Sales Outstanding (DSO)",
+            "value": "Effective Days Sales Outstanding (DSO)",
+            "type": null,
+            "values": [
+              "0"
+            ]
+          },
+          {
+            "key": "One year Probability of Default (PD)",
+            "value": "One year Probability of Default (PD)",
+            "type": null,
+            "values": [
+              "3%"
+            ]
+          },
+          {
+            "key": "Loss Given Default (LGD)",
+            "value": "Loss Given Default (LGD)",
+            "type": null,
+            "values": [
+              "0%"
+            ]
+          },
+          {
+            "key": "Funding cost (as a percentage on turnover)",
+            "value": "Funding cost (as a percentage on turnover)",
+            "type": null,
+            "values": [
+              "0%"
+            ]
+          },
+          {
+            "key": "Risk Weighted profit Margin (RWM)",
+            "value": "Risk Weighted profit Margin (RWM)",
+            "type": null,
+            "values": [
+              "60%"
+            ]
+          },
+          {
+            "key": "Required capital cushion",
+            "value": "Required capital cushion",
+            "type": null,
+            "values": [
+              "0"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "customers": [
+    {
+      "customerId": "1040",
+      "customerName": "MOTOR OIL ΕΛΛΑΣ ΔΙ.ΚΟΡΙΝΘΟΥ",
+      "parameters": {
+        "maxLimitGrowth": "10%",
+        "maxLimitReduction": "50%",
+        "minLimitGrowth": "5%",
+        "minLimitReduction": "5%",
+        "minAcceptedLimitUse": "22%",
+        "maxDso": "180",
+        "minAcceptedRwMargin": "7.5%",
+        "salesChange": "30%",
+        "marginChange": "45%",
+        "pdChange": "30%",
+        "maxLimitGrowthCli": "59%",
+        "maxLimitReductionCli": "44%",
+        "minLimitGrowthCli": "15%",
+        "minLimitReductionCli": "3%",
+        "minAcceptedLimitUseCli": "83%",
+        "maxDsoCli": "180",
+        "minAcceptedRwMarginCli": "14%",
+        "salesChangeCli": "80%",
+        "marginChangeCli": "81%",
+        "pdChangeCli": null
+      }
+    }
+  ],
+  "deletedCustomers": [],
+  "deletedProspects": []
+}

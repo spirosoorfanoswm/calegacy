@@ -1,0 +1,34 @@
+<!--<div class="row">-->
+  <!--<div class="col-md-12">-->
+      <!--<app-header></app-header>-->
+  <!--</div>-->
+<!--</div>-->
+<!--<div class="row">-->
+  <!--<div class="col-md-3">-->
+      <!--<app-menu></app-menu>-->
+  <!--</div>-->
+  <!--<div class="col-md-9">-->
+    <!--<app-main></app-main>-->
+    <!--<router-outlet></router-outlet>-->
+  <!--</div>-->
+<!--</div>-->
+<div class="container-full h-100">
+    <div class="row no-gutters h-100">
+            <div class="col col-12 col-lg-3 col-xl-2 col-aside">
+                <app-menu></app-menu>
+            </div>
+            <div class="col col-12 col-lg-9 col-xl-10">
+                <app-header></app-header>
+                <alert></alert>
+                <!-- TOP MENU -->
+                <main>
+                    <!-- SNAPSHOT DATA-->
+                    <app-main></app-main>
+                    <!-- ROUTER OUTLET -->
+                    <div [@routerTransition]="getState(o)">
+                        <router-outlet #o="outlet"></router-outlet>
+                    </div>
+                </main>
+            </div>
+    </div>
+</div>

@@ -1,0 +1,244 @@
+<form name="form" (ngSubmit) = "f.form.valid && onSubmit()" #f="ngForm" novalidate>
+
+    <!-- @todo make dynamic to load form Array! -->
+    <div class="form-group">
+        <label for="creditAmount">Total Credit Limit</label>
+        <input type="text" class="form-control"
+               name="creditAmount"
+               [(ngModel)]="scenario.parameters.creditAmount" #creditAmount="ngModel"
+               [ngClass]="{ 'is-invalid': f.submitted && creditAmount.invalid }" required
+               id="creditAmount"/>
+        <div *ngIf="(f.submitted && creditAmount.invalid)" class="invalid-feedback">
+            <div *ngIf="creditAmount.errors.required">Credit Amount is required</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="minAcceptedRwMargin">Minimum acceptable Risk Weighted Margin</label>
+        <input type="text" class="form-control"
+               name="minAcceptedRwMargin"
+               [(ngModel)]="scenario.parameters.minAcceptedRwMargin" #minAcceptedRwMargin="ngModel"
+               [ngClass]="{ 'is-invalid': f.submitted && minAcceptedRwMargin.invalid }" required
+               id="minAcceptedRwMargin"/>
+        <div *ngIf="f.submitted && minAcceptedRwMargin.invalid" class="invalid-feedback">
+            <div *ngIf="minAcceptedRwMargin.errors.required">Minimum acceptable Risk Weighted Margin</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="salesChange">Sales change</label>
+        <input type="text" class="form-control"
+               name="salesChange"
+               [(ngModel)]="scenario.parameters.salesChange" #salesChange="ngModel"
+               [ngClass]="{ 'is-invalid': f.submitted && salesChange.invalid }"
+               id="salesChange"/>
+        <div *ngIf="f.submitted && salesChange.invalid" class="invalid-feedback">
+            <div *ngIf="salesChange.errors.required">Sales change</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="marginChange">Change in profit Margins</label>
+        <input type="text" class="form-control"
+               name="marginChange"
+               [(ngModel)]="scenario.parameters.marginChange" #marginChange="ngModel"
+               [ngClass]="{ 'is-invalid': f.submitted && marginChange.invalid }"
+               id="marginChange"/>
+        <div *ngIf="f.submitted && marginChange.invalid" class="invalid-feedback">
+            <div *ngIf="marginChange.errors.required">Change in profit Margins</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="pdChange">Change in default probabilities</label>
+        <input type="text" class="form-control"
+               name="pdChange"
+               [(ngModel)]="scenario.parameters.pdChange" #pdChange="ngModel"
+               [ngClass]="{ 'is-invalid': f.submitted && pdChange.invalid }"
+               id="pdChange"/>
+        <div *ngIf="f.submitted && pdChange.invalid" class="invalid-feedback">
+            <div *ngIf="pdChange.errors.required">Change in default probabilities</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Worst acceptable CAS</label>
+        <div class="col-12">
+
+            <ng-select [dropdownPosition]="'bottom'"
+                       [searchable]="false"
+                       [items]="contextAll.scores"
+                       name="score" 
+                       [(ngModel)]="scenario.parameters.worstAcceptableScore">
+            </ng-select>
+
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="maxDso">Maximum accepted DSO (days)</label>
+        <input type="text" class="form-control"
+               name="maxDso"
+               [(ngModel)]="scenario.parameters.maxDso" #maxDso="ngModel"
+               [ngClass]="{ 'is-invalid': f.submitted && maxDso.invalid }"
+               id="maxDso"/>
+        <div *ngIf="f.submitted && maxDso.invalid" class="invalid-feedback">
+            <div *ngIf="maxDso.errors.required">Maximum accepted DSO (days)</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="minAcceptedLimitUse">Minimum accepted limit use</label>
+        <input type="text" class="form-control"
+               name="minAcceptedLimitUse"
+               [(ngModel)]="scenario.parameters.minAcceptedLimitUse" #minAcceptedLimitUse="ngModel"
+               [ngClass]="{ 'is-invalid': f.submitted && minAcceptedLimitUse.invalid }" required
+               id="minAcceptedLimitUse"/>
+        <div *ngIf="f.submitted && minAcceptedLimitUse.invalid" class="invalid-feedback">
+            <div *ngIf="minAcceptedLimitUse.errors.required">Minimum accepted limit use</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="maxLimitGrowth">Maximum limit growth</label>
+        <input type="text" class="form-control"
+               name="maxLimitGrowth"
+               [(ngModel)]="scenario.parameters.maxLimitGrowth" #maxLimitGrowth="ngModel"
+               [ngClass]="{ 'is-invalid': f.submitted && maxLimitGrowth.invalid }" required
+               id="maxLimitGrowth"/>
+        <div *ngIf="f.submitted && maxLimitGrowth.invalid" class="invalid-feedback">
+            <div *ngIf="maxLimitGrowth.errors.required">Maximum limit growth</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="maxLimitReduction">Maximum limit reduction</label>
+        <input type="text" class="form-control"
+               name="maxLimitReduction"
+               [(ngModel)]="scenario.parameters.maxLimitReduction" #maxLimitReduction="ngModel"
+               [ngClass]="{ 'is-invalid': f.submitted && maxLimitReduction.invalid }" required
+               id="maxLimitReduction"/>
+        <div *ngIf="f.submitted && maxLimitReduction.invalid" class="invalid-feedback">
+            <div *ngIf="maxLimitReduction.errors.required">Maximum limit reduction</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="minLimitGrowth">Minimum limit growth</label>
+        <input type="text" class="form-control"
+               name="minLimitGrowth"
+               [(ngModel)]="scenario.parameters.minLimitGrowth" #minLimitGrowth="ngModel"
+               [ngClass]="{ 'is-invalid': f.submitted && minLimitGrowth.invalid }" required
+               id="minLimitGrowth"/>
+        <div *ngIf="f.submitted && minLimitGrowth.invalid" class="invalid-feedback">
+            <div *ngIf="minLimitGrowth.errors.required">Minimum limit growth</div>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label for="minLimitReduction">Minimum limit reduction</label>
+        <input type="text" class="form-control"
+               name="minLimitReduction"
+               [(ngModel)]="scenario.parameters.minLimitReduction" #minLimitReduction="ngModel"
+               [ngClass]="{ 'is-invalid': f.submitted && minLimitReduction.invalid }" required
+               id="minLimitReduction"/>
+        <div *ngIf="f.submitted && minLimitReduction.invalid" class="invalid-feedback">
+            <div *ngIf="minLimitReduction.errors.required">Minimum limit reduction</div>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label for="raroc">Intended Return on Equity</label>
+        <input type="text" class="form-control"
+               name="raroc"
+               [(ngModel)]="scenario.parameters.raroc" #raroc="ngModel"
+               [ngClass]="{ 'is-invalid': f.submitted && raroc.invalid }" required
+               id="raroc"/>
+        <div *ngIf="f.submitted && raroc.invalid" class="invalid-feedback">
+            <div *ngIf="raroc.errors.required">Intended Return on Equity</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="wacc">WACC(Weighted Avarage Cost of Capital)</label>
+        <input type="text" class="form-control"
+               name="wacc"
+               [(ngModel)]="scenario.parameters.wacc" #wacc="ngModel"
+               [ngClass]="{ 'is-invalid': f.submitted && wacc.invalid }" required
+               id="wacc"/>
+        <div *ngIf="f.submitted && wacc.invalid" class="invalid-feedback">
+            <div *ngIf="wacc.errors.required">WACC(Weighted Avarage Cost of Capital)</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="significantDigits">Number of limit's significant digits</label>
+        <input type="text" class="form-control"
+               name="significantDigits"
+               [(ngModel)]="scenario.parameters.significantDigits" #significantDigits="ngModel"
+               [ngClass]="{ 'is-invalid': f.submitted && significantDigits.invalid }" required
+               id="significantDigits"/>
+        <div *ngIf="f.submitted && significantDigits.invalid" class="invalid-feedback">
+            <div *ngIf="significantDigits.errors.required">Number of limit's significant digits</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="minLimit">Minimum acceptable limit amount</label>
+        <input type="text" class="form-control"
+               name="minLimit"
+               [(ngModel)]="scenario.parameters.minLimit" #minLimit="ngModel"
+               [ngClass]="{ 'is-invalid': f.submitted && minLimit.invalid }" required
+               id="minLimit"/>
+        <div *ngIf="f.submitted && minLimit.invalid" class="invalid-feedback">
+            <div *ngIf="minLimit.errors.required">Minimum acceptable limit amount</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="minLimitPct">Minimum accepted limit over annual turnover</label>
+        <input type="text" class="form-control"
+               name="minLimitPct"
+               [(ngModel)]="scenario.parameters.minLimitPct" #minLimitPct="ngModel"
+               [ngClass]="{ 'is-invalid': f.submitted && minLimitPct.invalid }" required
+               id="minLimitPct"/>
+        <div *ngIf="f.submitted && minLimitPct.invalid" class="invalid-feedback">
+            <div *ngIf="minLimitPct.errors.required">Minimum accepted limit over annual turnover</div>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary"
+    >Resolve</button>
+    <div class="divider"></div>
+    <button type="button" (click)="openModal()" class="btn btn-danger"> Delete Scenario</button>
+    <div class="divider"></div>
+  </form>
+
+  <div [ngStyle]="{'display':display}" class="modal-dialog" role="document">
+    <div class="modal-content">
+		<div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLabel">Delete scenario</h5>
+			<button type="button" class="close" (click)="onCloseHandled()" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		<div class="modal-body">
+            <div class="text-center">
+                <img class="img-fluid" src="/assets/img/icons8-box-important-64.png">
+            </div>
+            <div class="text-center">
+                This action will permanetly delete current scenario's data.Are you sure you want to procced?
+            </div>
+		</div>
+		<div class="modal-footer">
+			<button class="btn btn-primary" (click)="deleteCompleteScenario( scenario.scenarioId )" type="submit">OK</button>
+			<button type="button" class="btn btn-primary" (click)="onCloseHandled()">Cancel</button>
+		</div>
+    </div>
+</div>
+<div [ngStyle]="{'display':display}" class="modal" role="dialog"></div>
+<div *ngIf="!allow" class="loading">Loading</div>
+
+

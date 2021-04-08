@@ -1,0 +1,22 @@
+
+<div class="row">
+    <div class="col-md-12">
+        <div style="display: block">
+
+            <section class="type-chart-label">
+                <button *ngFor="let gr of dataTabs; let i = index" (click)="changeTypeGraph(i)" type="button"
+                        [ngClass]="i == currentTypeGraph ? 'btn btn-dark' : 'btn' "> {{ gr }}</button>
+            </section>
+
+            <canvas baseChart
+                    [datasets]="ChartData"
+                    [labels]="ChartLabels"
+                    [options]="ChartOptions"
+                    [legend]="ChartLegend"
+                    [chartType]="ChartType"
+                    *ngIf="ChartData">
+            </canvas>
+
+        </div>
+    </div>
+</div>

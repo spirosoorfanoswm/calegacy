@@ -1,0 +1,93 @@
+<button type="button" class="btn btn-primary" style = "float:right" (click)="openModal()">Find Customer</button>
+
+<div [ngStyle]="{'display':display}" class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Find Customer</h5>
+            <button type="button" class="close" (click)="onCloseHandled()" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <form (ngSubmit)="searchCustomer()" class="form-inline" #f="ngForm">
+            <div class="modal-body">
+                <div>Search By:</div>
+                <div class="form-group" style="width: 100%; display: flex;">
+                    <div *ngFor="let criteria of searchCriteria">
+                        <input
+                                id="searchBy"
+                                name="radio-group"
+                                class="form-radio"
+                                type="radio"
+                                name="searchBy"
+                                ngModel
+                                [value]="criteria.value"
+                                required/>
+                        <label>
+                            {{ criteria.displayName }}
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group" style="width: 100%; display: flex;" >
+                    <input class="form-control animate search-box"
+                           type="text"
+                           name="searchKey"
+                           ngModel
+                           placeholder="Search by"
+                           style="flex-wrap: wrap; width: 80%; margin-top:12px; margin-bottom:12px;"
+                           required
+                    />
+                    <div style="width:20%">
+                        <button
+                                class="btn btn-primary"
+                                type="submit"
+                                [disabled]="!f.valid"
+                                style="min-width:auto; width:80%; margin-left:10%; margin-right:10%;">
+                            Search
+                        </button>
+                    </div>
+                </div>
+                <table class="table table-striped" cellpadding="0" cellspacing="0">
+                    <thead>
+                    <tr>
+                        <th><label>Customer code</label></th>
+                        <th><label>Name</label></th>
+                        <th><label>Portfolio</label></th>
+                        <th><label>{{vatLabel}}</label></th>
+                    </tr>
+                    </thead>
+                    <tbody *ngIf="customers && customers?.length">
+                        <tr style="cursor: pointer;" *ngFor="let customer of customers" (click)="showInfo(customer.customerId)">
+                            <td>{{customer.customerId}}</td>
+                            <td>{{customer.customerName}}</td>
+                            <td>{{customer.portfolio}}</td>
+                            <td>{{customer.vatNumber}}</td>
+                        </tr>
+                    <!--<div class="customer-not-found" *ngIf="(!customers || !customers?.length)
+                     && submmited">Customer is not Found</div> -->
+                    </tbody>
+                </table>
+                <div *ngIf="(!customers || !customers?.length) && submmited" class="customer-not-found" >
+                    Customer is not Found
+                </div>
+            </div>
+            <div class="modal-footer">
+                <!--button
+                    class="btn btn-primary"
+                    type="submit">OK</button>-->
+                <button type="button" class="btn btn-primary" (click)="onCloseHandled()">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <div *ngIf="!allow" class="loading">Loading</div>
+
+</div>
+
+<div [ngStyle]="{'display':display}" class="modal" role="dialog"></div>
+
+<div *ngIf="showClientInfo" [ngStyle]="{'display':displayCustomerInfo}" class="modal" role="dialog">
+        <app-clientele-info
+        [scenarioIdIn]="scenarioId"
+        [customerIdIn]="customerId">
+    </app-clientele-info>
+        <button type="button" class="btn btn-primary" (click)="closeInfo()">Close</button>
+</div>

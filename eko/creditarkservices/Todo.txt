@@ -1,0 +1,190 @@
+DROP TABLE IF EXISTS "d_system_scenario";
+CREATE TABLE "d_system_scenario" (
+  "scenario_id" int4 NOT NULL DEFAULT NULL,
+  "scenario_date" date
+);
+ALTER TABLE "d_system_scenario" OWNER TO "postgres";
+
+
+insert into core.app_user values ('system_scenario', 'system_scenario', 1, '{31}', 360, 200, 2);
+select core.change_password('system_scenario', 'system_scenario');
+
+
+DROP TABLE IF EXISTS schema_here.d_portfolio_aging;
+CREATE TABLE schema_here.d_portfolio_aging (
+    context_id smallint NOT NULL,
+    snapshot_date date NOT NULL,
+	portfolio_id int4 NOT NULL,
+	aging_bucket character varying(1200) COLLATE pg_catalog."default",
+	aging_bucket_value double precision,
+	
+	CONSTRAINT d_portfolio_aging_pkey PRIMARY KEY (context_id, snapshot_date, portfolio_id, aging_bucket)
+);
+ALTER TABLE schema_here.d_portfolio_aging OWNER TO "postgres";
+
+DROP TABLE IF EXISTS schema_here.d_portfolio_apd_kpi;
+CREATE TABLE schema_here.d_portfolio_apd_kpi (
+    context_id smallint NOT NULL,
+    snapshot_date date NOT NULL,
+   	portfolio_id int4 NOT NULL,
+   	value double precision,
+	CONSTRAINT d_portfolio_apd_kpi_pkey PRIMARY KEY (context_id, snapshot_date, portfolio_id)
+);
+ALTER TABLE schema_here.d_portfolio_apd_kpi OWNER TO "postgres";
+
+DROP TABLE IF EXISTS schema_here.d_portfolio_apdu_kpi;
+CREATE TABLE schema_here.d_portfolio_apdu_kpi (
+    context_id smallint NOT NULL,
+    snapshot_date date NOT NULL,
+   	portfolio_id int4 NOT NULL,
+   	value double precision,
+	CONSTRAINT d_portfolio_apdu_kpi_pkey PRIMARY KEY (context_id, snapshot_date, portfolio_id)
+);
+ALTER TABLE schema_here.d_portfolio_apdu_kpi OWNER TO "postgres";
+
+DROP TABLE IF EXISTS schema_here.d_validation_rules_labels;
+CREATE TABLE schema_here.d_validation_rules_labels (
+    id smallint NOT NULL,
+    description character varying(1200) COLLATE pg_catalog."default" not null,
+    model_description character varying(1200) COLLATE pg_catalog."default" not null,
+    CONSTRAINT d_validation_rules_labels_pkey PRIMARY KEY (id )
+);
+ALTER TABLE schema_here.d_validation_rules_labels OWNER TO "postgres";
+
+DROP TABLE IF EXISTS schema_here.d_validation_rules;
+CREATE TABLE schema_here.d_validation_rules (
+    context_id smallint NOT NULL,
+       	portfolio_id int4 NOT NULL,
+       	d_validation_rule_label_id smallint NOT NULL,
+       	value double precision,
+    	CONSTRAINT d_validation_rules_pkey PRIMARY KEY (context_id, portfolio_id, d_validation_rule_label_id ),
+    	FOREIGN KEY (d_validation_rule_label_id) REFERENCES schema_here.d_validation_rules_labels(id)
+);
+ALTER TABLE schema_here.d_validation_rules OWNER TO "postgres";
+
+
+drop function if exists public.get_customers;
+CREATE OR REPLACE FUNCTION public.get_customers(
+	IN p_context_id smallint,IN p_snapshot_date date,
+	IN p_scenario_id integer,
+	IN p_portfolio_id smallint,
+	IN p_sort_column smallint,
+	IN p_sort_desc boolean,
+	IN p_offset integer,
+	IN p_length integer)
+    RETURNS TABLE(customer_id character varying,
+				  customer_name character varying,
+				  assessment character varying,
+				  credit_limit double precision,
+				  proposed_limit double precision,
+				  balance double precision,
+				  portfolio character varying,
+				  vat_number character varying,
+				  customer_status character varying,
+				 behavioral_score character varying)
+    LANGUAGE 'plpgsql'
+    STABLE
+    PARALLEL UNSAFE
+    COST 50    ROWS 100
+AS $BODY$	/* Input
+	p_context_id smallint,
+	p_snapshot_date date,
+	p_scenario_id integer,
+	p_portfolio_id smallint,
+	p_sort_column smallint,
+	p_sort_desc boolean,
+	p_offset int,
+	p_length int
+	*/
+
+	/* Output
+	customer_id character varying,
+	customer_name character varying,
+	assessment character varying,
+	credit_limit double precision,
+	proposed_limit double precision,
+	balance double precision,
+	portfolio character varying,
+	vat_number character varying,
+	customer_status character varying,
+	behavioral_score character varying
+	*/
+BEGIN
+	IF p_scenario_id < 0 THEN
+		RETURN QUERY EXECUTE
+		'
+		SELECT
+			c.customer_id,
+			c.customer_name,
+			sn.credit_ark_score,
+			sn.credit_limit,
+			0::double precision,
+			sn.balance,
+			p.descr AS portfolio,
+			c.vat_number,
+			s.descr AS customer_status,
+			sn.behavioral_score
+		FROM
+			d_customer c
+			INNER JOIN v_snapshot sn
+				ON sn.context_id = c.context_id
+				AND sn.snapshot_date = $2
+				AND sn.customer_id = c.customer_id
+			LEFT JOIN d_portfolio p
+				ON p.context_id = c.context_id
+				AND p.portfolio_id = c.portfolio_id
+			LEFT JOIN m_customer_status s
+				ON s.context_id = c.context_id
+				AND s.customer_status_id = sn.customer_status_id
+			WHERE
+				c.context_id = $1
+				AND ($3 = -1 OR c.portfolio_id = $3)
+			ORDER BY
+				' || CAST(p_sort_column AS CHAR) || CASE WHEN p_sort_desc THEN ' DESC' ELSE '' END ||'
+			OFFSET
+				$4
+			LIMIT
+				$5'
+			USING p_context_id, p_snapshot_date, p_portfolio_id, p_offset, p_length;
+	ELSE
+		RETURN QUERY EXECUTE
+		'
+		SELECT
+			c.customer_id,
+			c.customer_name,
+			sn.credit_ark_score,
+			sn.credit_limit,
+			r.proposed_limit,
+			sn.balance,
+			p.descr AS portfolio,
+			c.vat_number,
+			s.descr AS customer_status,
+			sn.behavioral_score
+		FROM
+			d_customer c
+			INNER JOIN v_snapshot sn
+				ON sn.context_id = c.context_id
+				AND sn.snapshot_date = $2
+				AND sn.customer_id = c.customer_id
+			INNER JOIN d_customer_results r
+				ON r.scenario_id = $6
+				AND r.customer_id = c.customer_id
+			LEFT JOIN d_portfolio p
+				ON p.context_id = c.context_id
+				AND p.portfolio_id = c.portfolio_id
+			LEFT JOIN m_customer_status s
+				ON s.context_id = c.context_id
+				AND s.customer_status_id = sn.customer_status_id
+			WHERE
+				c.context_id = $1
+				AND ($3 = -1 OR c.portfolio_id = $3)
+			ORDER BY
+				' || CAST(p_sort_column AS CHAR) || CASE WHEN p_sort_desc THEN ' DESC' ELSE '' END ||'
+			OFFSET
+				$4
+			LIMIT
+				$5'
+			USING p_context_id, p_snapshot_date, p_portfolio_id, p_offset, p_length, p_scenario_id;
+	END IF;
+END;
+$BODY$;

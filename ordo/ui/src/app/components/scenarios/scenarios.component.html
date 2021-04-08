@@ -1,0 +1,195 @@
+<section class="list">
+
+    <!-- Create New -->
+    <button style="float:right" class="btn btn-primary btn-primary-blue animate" (click)="newScenario()"> + Create New
+    </button>
+
+    <div class="table-responsive" *ngIf="data">
+        <form novalidate #f="ngForm">
+            <table class="table table-striped" cellpadding="0" cellspacing="0">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th>
+                        <div class="form-group">
+                            <label class="allow-sort" (click)="sortResults(f, 'pending');">Completed</label>
+                            <input class="form-control animate" type="text" placeholder="Search..." disabled>
+                        </div>
+                     </th>
+                    <th>
+                        <div class="form-group">
+                            <label class="allow-sort" (click)="sortResults(f, 'scenarioId');">Scenario ID</label>
+                            <input class="form-control animate" type="text" placeholder="Search..." name="name"
+                                   placeholder="Search by Scenario ID" ngModel
+                                   (keyup)="filterResults(f, 'scenarioId'); "/>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-group">
+                            <label class="allow-sort" (click)="sortResults(f, 'scenarioName');">Scenario Name</label>
+                            <input class="form-control animate" type="text" placeholder="Search..." name="name"
+                                   placeholder="Search by Scenario Name" ngModel
+                                   (keyup)="filterResults(f, 'scenarioName'); "/>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-group">
+                            <label>Owner</label>
+                            <input class="form-control animate" type="text" placeholder="Search..." disabled>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-group">
+                            <label>Max Limit Growth</label>
+                            <input class="form-control animate" type="text" placeholder="Search..." disabled>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-group">
+                            <label>Max Limit Reduction</label>
+                            <input class="form-control animate" type="text" placeholder="Search..." disabled>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-group">
+                            <label>Min Limit Growth</label>
+                            <input class="form-control animate" type="text" placeholder="Search..." disabled>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-group">
+                            <label>Min Limit Reduction</label>
+                            <input class="form-control animate" type="text" placeholder="Search..." disabled>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-group">
+                            <label>Credit Amount</label>
+                            <input class="form-control animate" type="text" placeholder="Search..." disabled>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-group">
+                            <label>Significant Digits</label>
+                            <input class="form-control animate" type="text" placeholder="Search..." disabled>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-group">
+                            <label>Min Limits</label>
+                            <input class="form-control animate" type="text" placeholder="Search..." disabled>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-group">
+                            <label>Min Limit Percentage</label>
+                            <input class="form-control animate" type="text" placeholder="Search..." disabled>
+                        </div>
+                    </th>
+
+                  
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let scenario of data | searchText: searchParams | paginate: { itemsPerPage: itemsPerPageLoad, currentPage: p } | sortEngine: sortParams; let i =index"
+                    style="cursor: pointer;">
+                    <td *ngIf="scenario.pending"></td>
+                    <td *ngIf="!scenario.pending"><img src="/assets/img/edit.png" (click)="showInfo(scenario)" ></td>
+                    <td ><img src="/assets/img/delete.png" (click)="openModal(scenario, i)" ></td>
+                    <td *ngIf="scenario.pending">NO</td>
+                    <td *ngIf="!scenario.pending">YES</td>
+                    <td>{{scenario.scenarioId}}</td>
+                    <td>{{scenario.scenarioName}}</td>
+                    <td>{{scenario.scenarioOwnerName}}</td>
+                    <td>{{scenario.parameters.maxLimitGrowth}}</td>
+                    <td>{{scenario.parameters.maxLimitReduction}}</td>
+                    <td>{{scenario.parameters.minLimitGrowth}}</td>
+                    <td>{{scenario.parameters.minLimitReduction}}</td>
+                    <td>{{ scenario.parameters.creditAmount | number }}</td>
+                    <td>{{scenario.parameters.significantDigits}}</td>
+                    <td>{{ scenario.parameters.minLimit | number }}</td>
+                    <td>{{scenario.parameters.minLimitPct}}</td>
+                    
+                </tr>
+
+                <tr class="customersCount">
+                    <td colspan="12" style="text-align: center"><b>Total Scenarios: {{ scenariosCount }}</b></td>
+                </tr>
+
+                </tbody>
+            </table>
+            <!--
+            <pagination-controls *ngIf="data.length > itemsPerPageLoad" class="pagination justify-content-center align-items-center" previousLabel="<"
+                                 nextLabel=">" (pageChange)="p=$event; currentPage(p)"></pagination-controls>
+            -->
+        </form>
+    </div>
+
+    <!-- MODAL CREATE SCENARIO -->
+    <div [ngStyle]="{'display':display}" class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create New Scenario</h5>
+                <button type="button" class="close" (click)="onCloseHandled()" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form (ngSubmit)="createScenario()" class="form-inline" #f="ngForm">
+                <div class="modal-body">
+                    <div>Scenario Name:</div>
+                    <div class="form-group" style="display: flex;">
+                        <input *ngIf="newScenarioTemplate"
+                                id="scenarioName"
+                                type="text"
+                                name="scenarioName"
+                                [(ngModel)]="newScenarioTemplate.scenarioName"
+                                required />
+                    </div>
+
+                    <div class="modal-footer">
+                        <button
+                                class="btn btn-primary"
+                                type="submit"
+                                [disabled]="!f.valid">
+                            OK
+                        </button>
+                        <button type="button" class="btn btn-primary" (click)="onCloseHandled()">Cancel</button>
+                    </div> 
+                    
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div [ngStyle]="{'display':display}" class="modal" role="dialog"></div>
+
+
+</section>
+<div *ngIf="!allow" class="loading">Loading</div>
+<div [ngStyle]="{'display':displayDelete}" class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Delete scenario</h5>
+                <button type="button" class="close" (click)="onCloseHandledModal()" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="text-center">
+                    <img class="img-fluid" src="/assets/img/icons8-box-important-64.png">
+                </div>
+                <div class="text-center">
+                    This action will permanetly delete current scenario's data.Are you sure you want to procced?
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" (click)="deleteCompleteScenario( )" type="submit">OK</button>
+                <button type="button" class="btn btn-primary" (click)="onCloseHandledModal()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+
+
